@@ -1,0 +1,124 @@
+import { FaReact } from 'react-icons/fa';
+import {
+  BiSolidHome,
+  BiSolidUser,
+  BiSolidFolderOpen,
+  BiSolidSpreadsheet,
+  BiSolidContact,
+} from 'react-icons/bi';
+import { SetStateAction, useState } from 'react'; // Import useState
+import '../../style/Navbar/navbar.scss';
+
+function Navbar() {
+  const [activeIcon, setActiveIcon] = useState('home'); // State untuk ikon yang aktif
+
+  // Fungsi untuk mengubah ikon yang aktif
+  const handleClick = (iconName: SetStateAction<string>) => {
+    setActiveIcon(iconName);
+  };
+
+  return (
+    <>
+      <div className="w-24 h-full fixed hidden md:block">
+        <div className="w-full h-1/6 pt-3 flex items-center justify-center bg-[#272932] border-dashed border-b-4 border-[aqua]">
+          <FaReact className="icon-navbar" />
+        </div>
+        <div className="w-full h-5/6 bg-[#272932]">
+          <div className="h-full w-full pb-20 pt-6">
+            <ul className="flex flex-col h-full justify-around">
+              <div
+                className={`h-20 ml-3 rounded-l-full flex justify-center items-center mr-[-1px] relative ${
+                  activeIcon === 'home'
+                    ? 'bg-[#1A1C26] border-l-4 border-l-[aqua] text-white'
+                    : 'border-l-4 border-l-sky-800 text-[#b9b9b9] hover:border-l-[aqua] hover:text-white cursor-pointer'
+                }`}
+                onClick={() => handleClick('home')} // Mengatur onClick
+              >
+                <span
+                  className={`${
+                    activeIcon === 'home' ? 'span-navbar-active' : ''
+                  }`}
+                />
+
+                <li>
+                  <BiSolidHome className="h-8 w-8 mr-[-10px]" />
+                </li>
+              </div>
+              <div
+                className={`h-20 ml-3 rounded-l-full flex justify-center items-center mr-[-1px] relative  ${
+                  activeIcon === 'profil'
+                    ? 'bg-[#1A1C26] border-l-4 border-l-[aqua] text-white'
+                    : 'border-l-4 border-l-sky-800 text-[#b9b9b9] hover:border-l-[aqua] hover:text-white cursor-pointer'
+                }`}
+                onClick={() => handleClick('profil')} // Mengatur onClick
+              >
+                <span
+                  className={`${
+                    activeIcon === 'profil' ? 'span-navbar-active' : ''
+                  }`}
+                />
+                <li>
+                  <BiSolidUser className="h-8 w-8 mr-[-10px]" />
+                </li>
+              </div>
+              <div
+                className={`h-20 ml-3 rounded-l-full flex justify-center items-center mr-[-1px] relative  ${
+                  activeIcon === 'project'
+                    ? 'bg-[#1A1C26] border-l-4 border-l-[aqua] text-white'
+                    : 'border-l-4 border-l-sky-800 text-[#b9b9b9] hover:border-l-[aqua] hover:text-white cursor-pointer'
+                }`}
+                onClick={() => handleClick('project')} // Mengatur onClick
+              >
+                <span
+                  className={`${
+                    activeIcon === 'project' ? 'span-navbar-active' : ''
+                  }`}
+                />
+
+                <li>
+                  <BiSolidFolderOpen className="h-8 w-8 mr-[-10px]" />
+                </li>
+              </div>
+              <div
+                className={`h-20 ml-3 rounded-l-full flex justify-center items-center mr-[-1px] relative  ${
+                  activeIcon === 'skill'
+                    ? 'bg-[#1A1C26] border-l-4 border-l-[aqua] text-white'
+                    : 'border-l-4 border-l-sky-800 text-[#b9b9b9] hover:border-l-[aqua] hover:text-white cursor-pointer'
+                }`}
+                onClick={() => handleClick('skill')} // Mengatur onClick
+              >
+                <span
+                  className={`${
+                    activeIcon === 'skill' ? 'span-navbar-active' : ''
+                  }`}
+                />
+                <li>
+                  <BiSolidSpreadsheet className="h-8 w-8 mr-[-10px]" />
+                </li>
+              </div>
+              <div
+                className={`h-20 ml-3 rounded-l-full flex justify-center items-center mr-[-1px] relative ${
+                  activeIcon === 'contact'
+                    ? 'bg-[#1A1C26] border-l-4 border-l-[aqua] text-white'
+                    : 'border-l-4 border-l-sky-800 text-[#b9b9b9] hover:border-l-[aqua] hover:text-white cursor-pointer'
+                }`}
+                onClick={() => handleClick('contact')} // Mengatur onClick
+              >
+                <span
+                  className={`${
+                    activeIcon === 'contact' ? 'span-navbar-active' : ''
+                  }`}
+                />
+                <li>
+                  <BiSolidContact className="h-8 w-8 mr-[-10px]" />
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default Navbar;

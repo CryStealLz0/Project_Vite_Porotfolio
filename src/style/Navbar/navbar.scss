@@ -1,0 +1,53 @@
+.icon-navbar {
+    color: red;
+    height: 65px;
+    width: 65px;
+    animation: 8s linear infinite icons;
+}
+
+.span-navbar-active {
+    position: absolute;
+    height: 20px;
+    width: 35px;
+    top: 0;
+    right: 1px;
+    margin-top: -20px;
+    background: #272932;
+    border-radius: 0 0 100% 0;
+    box-shadow: 5px 5px 0 5px #1A1C26;
+    &::before {
+    content: " ";
+    position: absolute;
+    height: 20px;
+    width: 35px;
+    bottom: 0;
+    right: 0px;
+    margin-bottom: -100px;
+    background: #272932;
+    border-radius: 0 100% 0 0;
+    box-shadow: 5px -5px 0 5px #1A1C26;
+    }
+}
+
+@keyframes icons {
+    0% {
+        color: aqua;
+        rotate: 0deg;
+    }
+    25% {
+        color: rgb(255, 61, 223);
+        rotate: 90deg;
+    }
+    50% {
+        color: yellow;
+        rotate: 180deg;
+    }
+    75% {
+        color: rgb(0, 255, 0);
+        rotate: 270deg;
+    }
+    100% {
+        color: aqua;
+        rotate: 360deg;
+    }
+}
