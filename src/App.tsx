@@ -1,11 +1,13 @@
 import './style/app.scss';
-import Navbar from './component/Navbar/Navbar.tsx';
+import NavbarLeft from './component/Navbar/NavbarLeft.tsx';
+import NavbarBottom from './component/Navbar/NavbarBottom.tsx';
 
 function App() {
   return (
     <>
-      <div>
-        <Navbar />
+      <div className="ml-24 mt-5">
+        <NavbarLeft />
+        <NavbarBottom />
       </div>
     </>
   );

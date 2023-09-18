@@ -1,0 +1,41 @@
+.span-left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 80px;
+    width: 40px;
+    background: black;
+    opacity: 1;
+    z-index: -10;
+    transform: skewX(-20deg) translateX(15px);
+}
+
+.span-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 80px;
+    width: 40px;
+    background: black;
+    opacity: 1;
+    z-index: -10;
+    transform: skewX(20deg) translateX(-15px);
+}
+
+@keyframes spanBottomLeftRight {
+    0% {
+        background: aqua;
+    }
+    25% {
+        background: rgb(255, 61, 223);
+    }
+    50% {
+        background: yellow;
+    }
+    75% {
+        background: rgb(0, 255, 0);
+    }
+    100% {
+        background: aqua;
+    }
+}

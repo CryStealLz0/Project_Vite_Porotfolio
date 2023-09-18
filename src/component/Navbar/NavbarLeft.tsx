@@ -7,9 +7,9 @@ import {
   BiSolidContact,
 } from 'react-icons/bi';
 import { SetStateAction, useState } from 'react'; // Import useState
-import '../../style/Navbar/navbar.scss';
+import '../../style/Navbar/navbarLeft.scss';
 
-function Navbar() {
+function NavbarLeft() {
   const [activeIcon, setActiveIcon] = useState('home'); // State untuk ikon yang aktif
 
   // Fungsi untuk mengubah ikon yang aktif
@@ -19,7 +19,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="w-24 h-full fixed hidden md:block">
+      <div className="w-24 h-full left-0 top-0 fixed hidden md:block">
         <div className="w-full h-1/6 pt-3 flex items-center justify-center bg-[#272932] border-dashed border-b-4 border-[aqua]">
           <FaReact className="icon-navbar" />
         </div>
@@ -121,4 +121,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavbarLeft;
