@@ -16,10 +16,22 @@ function NavbarBottom() {
   }
   return (
     <>
-      <div className="fixed bottom-0 left-0 w-full h-20 px-10 md:hidden">
-        <div className="w-full h-full bg-[#0000006a]">
-          <span className="span-left" />
-          <span className="span-right" />
+      <div
+        className={`fixed bottom-0 left-0 w-full px-9 md:hidden duration-300 ${
+          isOpen ? 'h-20' : 'h-16'
+        }`}
+      >
+        <div className="w-full h-full rounded-t-xl bg-black">
+          <span
+            className={`duration-300 ${
+              isOpen ? 'span-left-active' : 'span-left'
+            }`}
+          />
+          <span
+            className={`duration-300 ${
+              isOpen ? 'span-right-active' : 'span-right'
+            }`}
+          />
           <div className="absolute top-0 left-0 flex justify-center w-full">
             <button
               className="w-8 h-1 bg-white rounded-md"
@@ -28,38 +40,88 @@ function NavbarBottom() {
           </div>
           <div>
             <ul
-              className={`grid grid-cols-5 w-full h-full justify-around leading-[80px] font-bold text-white duration-300 ${
-                isOpen ? 'translate-y-2 ' : 'translate-y-7'
+              className={`grid grid-cols-5 w-full h-full justify-around leading-[80px] text-[12px] font-bold text-white duration-300 ${
+                isOpen ? 'translate-y-4' : 'translate-y-5'
               }`}
             >
               <div className="grid-cols-2 flex items-center justify-center">
                 <li className="cursor-pointer flex flex-col justify-center items-center">
-                  <BiSolidUser className="h-10 w-10" />
-                  <span className="mt-[-20px]">Profil</span>
+                  <BiSolidUser
+                    className={`duration-300 h-8 w-8 ${
+                      isOpen ? 'h-7 w-7 text-white ' : 'text-[#b9b9b9]'
+                    }`}
+                  />
+                  <span
+                    className={`mt-[-20px] translate-y-8  duration-300 ${
+                      isOpen ? 'translate-y-0' : ''
+                    }`}
+                  >
+                    Profil
+                  </span>
                 </li>
               </div>
               <div className="grid-cols-2 flex items-center justify-center">
                 <li className="cursor-pointer flex flex-col justify-center items-center">
-                  <BiSolidFolderOpen className="h-10 w-10" />
-                  <span className="mt-[-20px]">Project</span>
-                </li>
-              </div>
-              <div className="grid-cols-2 flex flex-col items-center justify-center">
-                <li className="cursor-pointer flex flex-col justify-center items-center">
-                  <BiSolidHome className="h-10 w-10" />
-                  <span className="mt-[-20px]">Home</span>
+                  <BiSolidFolderOpen
+                    className={`duration-300 h-8 w-8 ${
+                      isOpen ? 'h-7 w-7 text-white ' : 'text-[#b9b9b9]'
+                    }`}
+                  />
+                  <span
+                    className={`mt-[-20px] translate-y-8  duration-300 ${
+                      isOpen ? 'translate-y-0' : ''
+                    }`}
+                  >
+                    Project
+                  </span>
                 </li>
               </div>
               <div className="grid-cols-2 flex items-center justify-center">
                 <li className="cursor-pointer flex flex-col justify-center items-center">
-                  <BiSolidSpreadsheet className="h-10 w-10" />
-                  <span className="mt-[-20px]">Skill</span>
+                  <BiSolidHome
+                    className={`duration-300 h-8 w-8 ${
+                      isOpen ? 'h-7 w-7 text-white ' : 'text-[#b9b9b9]'
+                    }`}
+                  />
+                  <span
+                    className={`mt-[-20px] translate-y-8  duration-300 ${
+                      isOpen ? 'translate-y-0' : ''
+                    }`}
+                  >
+                    Home
+                  </span>
                 </li>
               </div>
               <div className="grid-cols-2 flex items-center justify-center">
                 <li className="cursor-pointer flex flex-col justify-center items-center">
-                  <BiSolidContact className="h-10 w-10" />
-                  <span className="mt-[-20px]">Contact</span>
+                  <BiSolidSpreadsheet
+                    className={`duration-300 h-8 w-8 ${
+                      isOpen ? 'h-7 w-7 text-white ' : 'text-[#b9b9b9]'
+                    }`}
+                  />
+                  <span
+                    className={`mt-[-20px] translate-y-8  duration-300 ${
+                      isOpen ? 'translate-y-0' : ''
+                    }`}
+                  >
+                    Skill
+                  </span>
+                </li>
+              </div>
+              <div className="grid-cols-2 flex items-center justify-center">
+                <li className="cursor-pointer flex flex-col justify-center items-center">
+                  <BiSolidContact
+                    className={`duration-300 h-8 w-8 ${
+                      isOpen ? 'h-7 w-7 text-white ' : 'text-[#b9b9b9]'
+                    }`}
+                  />
+                  <span
+                    className={`mt-[-20px] translate-y-8 duration-300 ${
+                      isOpen ? 'translate-y-0' : ''
+                    }`}
+                  >
+                    Contact
+                  </span>
                 </li>
               </div>
             </ul>

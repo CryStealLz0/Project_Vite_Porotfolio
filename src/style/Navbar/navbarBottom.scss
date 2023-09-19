@@ -2,7 +2,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 80px;
+    height: 64px;
     width: 40px;
     background: black;
     opacity: 1;
@@ -10,16 +10,42 @@
     transform: skewX(-20deg) translateX(15px);
 }
 
+.span-left-active {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 64px;
+    width: 40px;
+    background: black;
+    opacity: 1;
+    z-index: -10;
+    transform: skewX(-20deg) translateX(15px);
+    animation: 8s linear infinite spanBottomLeftRight;
+}
+
 .span-right {
     position: absolute;
     right: 0;
     bottom: 0;
-    height: 80px;
+    height: 64px;
     width: 40px;
     background: black;
     opacity: 1;
     z-index: -10;
     transform: skewX(20deg) translateX(-15px);
+
+}
+.span-right-active {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 64px;
+    width: 40px;
+    background: black;
+    opacity: 1;
+    z-index: -10;
+    transform: skewX(20deg) translateX(-15px);
+    animation: 8s linear infinite spanBottomLeftRight;
 }
 
 @keyframes spanBottomLeftRight {
