@@ -21,6 +21,15 @@
     z-index: -10;
     transform: skewX(-20deg) translateX(15px);
     animation: 8s linear infinite spanBottomLeftRight;
+    &::after {
+        content: ' ';
+        height: 60px;
+        width: 35px;
+        position: absolute;
+    right: 0;
+    bottom: 0;
+    background: black;
+    }
 }
 
 .span-right {
@@ -46,6 +55,15 @@
     z-index: -10;
     transform: skewX(20deg) translateX(-15px);
     animation: 8s linear infinite spanBottomLeftRight;
+    &::after {
+        content: ' ';
+        height: 60px;
+        width: 35px;
+        position: absolute;
+    left: 0;
+    bottom: 0;
+    background: black;
+    }
 }
 
 @keyframes spanBottomLeftRight {

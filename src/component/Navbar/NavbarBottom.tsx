@@ -52,8 +52,8 @@ function NavbarBottom() {
                     }`}
                   />
                   <span
-                    className={`mt-[-20px] translate-y-8  duration-300 ${
-                      isOpen ? 'translate-y-0' : ''
+                    className={`mt-[-30px] translate-y-5  duration-300 ${
+                      isOpen ? 'translate-y-[-5]' : ''
                     }`}
                   >
                     Profil
@@ -68,8 +68,8 @@ function NavbarBottom() {
                     }`}
                   />
                   <span
-                    className={`mt-[-20px] translate-y-8  duration-300 ${
-                      isOpen ? 'translate-y-0' : ''
+                    className={`mt-[-30px] translate-y-5  duration-300 ${
+                      isOpen ? 'translate-y-[-5]' : ''
                     }`}
                   >
                     Project
@@ -84,8 +84,8 @@ function NavbarBottom() {
                     }`}
                   />
                   <span
-                    className={`mt-[-20px] translate-y-8  duration-300 ${
-                      isOpen ? 'translate-y-0' : ''
+                    className={`mt-[-30px] translate-y-5  duration-300 ${
+                      isOpen ? 'translate-y-[-5]' : ''
                     }`}
                   >
                     Home
@@ -100,8 +100,8 @@ function NavbarBottom() {
                     }`}
                   />
                   <span
-                    className={`mt-[-20px] translate-y-8  duration-300 ${
-                      isOpen ? 'translate-y-0' : ''
+                    className={`mt-[-30px] translate-y-5  duration-300 ${
+                      isOpen ? 'translate-y-[-5]' : ''
                     }`}
                   >
                     Skill
@@ -116,8 +116,8 @@ function NavbarBottom() {
                     }`}
                   />
                   <span
-                    className={`mt-[-20px] translate-y-8 duration-300 ${
-                      isOpen ? 'translate-y-0' : ''
+                    className={`mt-[-30px] translate-y-5 duration-300 ${
+                      isOpen ? 'translate-y-[-5]' : ''
                     }`}
                   >
                     Contact
