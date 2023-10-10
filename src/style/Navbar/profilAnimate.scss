@@ -1,0 +1,143 @@
+@mixin layar($value_content) {
+    @media screen and (max-width: ($value_content)) {
+        @content;
+    }
+}
+
+.container {
+    // display: block;
+    // flex-wrap: wrap;
+    position: absolute;
+    padding: 2rem;
+    bottom: -50px;
+    right: -200px;
+    height: 320px;
+    max-width: 500px;
+    border-radius: 15px;
+    background: rgb(30, 41, 59);
+    border: 2px solid black;
+    transition: all 1s ease;
+    // animation: container ease-in-out infinite 4s;
+
+    .container-profil {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        animation: container-profil linear 3s forwards ;
+        .profil {
+            height: auto;
+            width: 120px;
+            animation: profil linear 3s forwards ;
+            img {
+                width: 120px;
+            }
+        }
+    }
+
+    .text-profil {
+        position: absolute;
+        animation: text-profil linear 3s forwards ;
+        .description {
+
+        }
+        .name {
+
+        }
+        .job {
+
+        }
+    }
+}
+
+@keyframes container-profil {
+    0% {
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    25% {
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    75% {
+        top: 0;
+        left: 0;
+        width: 25%;
+        display: flex;
+        justify-content: center;
+    }
+    100% {
+        top: 0;
+        left: 0;
+        width: 25%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@keyframes profil {
+    0% {
+        height: 120px;
+            width: 120px;
+            overflow: hidden;
+            border-radius: 100%;
+    }
+
+    // 25% {
+    //     height: auto;
+    //     width: 120px;
+    // }
+
+    75% {
+        height: 120px;
+        width: 120px;
+        overflow: hidden;
+        border-radius: 100%;
+    }
+
+    100% {
+        height: auto;
+        width: 120px;
+        overflow: hidden;
+        border-radius: 0%;
+    }
+}
+
+@keyframes text-profil {
+    
+    0%{
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 40%;
+    }
+
+    25% {
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 40%;
+        
+    }
+    90%{
+        bottom: 0;
+        right: 0;
+        width: 75%;
+        height: 100%;
+        padding: 0;
+    }
+
+    100% {
+        bottom: 0;
+        right: 0;
+        width: 75%;
+        height: 100%;
+        padding: 1rem;
+    }
+}
