@@ -14,10 +14,11 @@ function ProfilWelcome() {
               repellat nemo sapiente, est cumque iste sunt blanditiis. Eligendi
               voluptatem vel quam?
             </div>
-            <ProfilAnimate></ProfilAnimate>
           </div>
         </div>
-        <div className="h-28 w-full"></div>
+        <div className="h-28 w-5/6 relative">
+          <ProfilAnimate></ProfilAnimate>
+        </div>
       </div>
     </>
   );

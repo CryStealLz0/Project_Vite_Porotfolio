@@ -3,7 +3,7 @@ import '../../style/Navbar/profilAnimate.scss';
 function ProfilAnimate() {
   return (
     <>
-      <div className="container">
+      <div className="container-animate">
         <div className="container-profil">
           <div className=" profil">
             <img src="./src/assets/img/indra.jpg" alt="profil" />
