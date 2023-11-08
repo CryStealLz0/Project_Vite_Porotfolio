@@ -6,7 +6,7 @@ import ProfilWelcome from './component/Profil/ProfilWelcome.tsx';
 function App() {
   return (
     <>
-      <div className="md:ml-24 md:mt-5">
+      <div className="md:ml-24">
         {/* Navbar */}
         <NavbarLeft />
         <NavbarBottom />

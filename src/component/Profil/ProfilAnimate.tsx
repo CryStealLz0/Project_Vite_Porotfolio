@@ -13,8 +13,7 @@ function ProfilAnimate() {
           <p className="description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
             inventore sequi totam qui doloremque temporibus tempore cumque autem
-            blanditiis sit nihil, vitae consequuntur. Soluta tempora corporis
-            sed, deserunt eveniet nam.
+            blanditiis sit nihil, vitae consequuntur.
           </p>
 
           <p className="name">Dimas Indra Jaya</p>
