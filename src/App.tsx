@@ -1,7 +1,7 @@
 import './style/app.scss';
 import NavbarLeft from './component/Navbar/NavbarLeft.tsx';
 import NavbarBottom from './component/Navbar/NavbarBottom.tsx';
-import ProfilWelcome from './component/Profil/ProfilWelcome.tsx';
+import ProfilWelcome from './component/Profil/profilWelcome.tsx';
 
 function App() {
   return (

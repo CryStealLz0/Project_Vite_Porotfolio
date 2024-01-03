@@ -20,16 +20,16 @@ function NavbarLeft() {
   return (
     <>
       <div className="w-24 h-full left-0 top-0 fixed hidden md:block">
-        <div className="w-full h-1/6 pt-3 flex items-center justify-center bg-[#272932] border-dashed border-b-4 border-[aqua]">
+        <div className="w-full h-1/6 pt-3 flex items-center justify-center bg-[#0F0F0F] border-dashed border-b-4 border-[aqua]">
           <FaReact className="icon-navbar" />
         </div>
-        <div className="w-full h-5/6 bg-[#272932]">
+        <div className="w-full h-5/6 bg-[#0F0F0F]">
           <div className="h-full w-full pb-20 pt-6">
             <ul className="flex flex-col h-full justify-around">
               <div
                 className={`h-20 ml-3 rounded-l-full flex justify-center items-center mr-[-1px] relative ${
                   activeIcon === 'home'
-                    ? 'bg-[#1A1C26] border-l-4 border-l-[aqua] text-white'
+                    ? 'bg-[#0B0B0D] border-l-4 border-l-[aqua] text-white'
                     : 'border-l-4 border-l-sky-800 text-[#b9b9b9] hover:border-l-[aqua] hover:text-white cursor-pointer'
                 }`}
                 onClick={() => handleClick('home')} // Mengatur onClick
@@ -47,7 +47,7 @@ function NavbarLeft() {
               <div
                 className={`h-20 ml-3 rounded-l-full flex justify-center items-center mr-[-1px] relative  ${
                   activeIcon === 'profil'
-                    ? 'bg-[#1A1C26] border-l-4 border-l-[aqua] text-white'
+                    ? 'bg-[#0B0B0D] border-l-4 border-l-[aqua] text-white'
                     : 'border-l-4 border-l-sky-800 text-[#b9b9b9] hover:border-l-[aqua] hover:text-white cursor-pointer'
                 }`}
                 onClick={() => handleClick('profil')} // Mengatur onClick
@@ -64,7 +64,7 @@ function NavbarLeft() {
               <div
                 className={`h-20 ml-3 rounded-l-full flex justify-center items-center mr-[-1px] relative  ${
                   activeIcon === 'project'
-                    ? 'bg-[#1A1C26] border-l-4 border-l-[aqua] text-white'
+                    ? 'bg-[#0B0B0D] border-l-4 border-l-[aqua] text-white'
                     : 'border-l-4 border-l-sky-800 text-[#b9b9b9] hover:border-l-[aqua] hover:text-white cursor-pointer'
                 }`}
                 onClick={() => handleClick('project')} // Mengatur onClick
@@ -82,7 +82,7 @@ function NavbarLeft() {
               <div
                 className={`h-20 ml-3 rounded-l-full flex justify-center items-center mr-[-1px] relative  ${
                   activeIcon === 'skill'
-                    ? 'bg-[#1A1C26] border-l-4 border-l-[aqua] text-white'
+                    ? 'bg-[#0B0B0D] border-l-4 border-l-[aqua] text-white'
                     : 'border-l-4 border-l-sky-800 text-[#b9b9b9] hover:border-l-[aqua] hover:text-white cursor-pointer'
                 }`}
                 onClick={() => handleClick('skill')} // Mengatur onClick
@@ -99,7 +99,7 @@ function NavbarLeft() {
               <div
                 className={`h-20 ml-3 rounded-l-full flex justify-center items-center mr-[-1px] relative ${
                   activeIcon === 'contact'
-                    ? 'bg-[#1A1C26] border-l-4 border-l-[aqua] text-white'
+                    ? 'bg-[#0B0B0D] border-l-4 border-l-[aqua] text-white'
                     : 'border-l-4 border-l-sky-800 text-[#b9b9b9] hover:border-l-[aqua] hover:text-white cursor-pointer'
                 }`}
                 onClick={() => handleClick('contact')} // Mengatur onClick

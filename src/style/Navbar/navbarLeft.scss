@@ -1,5 +1,6 @@
+@import '/src/style/app.scss';
+
 .icon-navbar {
-    color: red;
     height: 65px;
     width: 65px;
     animation: 8s linear infinite icons;
@@ -12,9 +13,9 @@
     top: 0;
     right: 1px;
     margin-top: -20px;
-    background: #272932;
+    background: $primary-variant;
     border-radius: 0 0 100% 0;
-    box-shadow: 5px 5px 0 5px #1A1C26;
+    box-shadow: 5px 5px 0 5px $primary;
     &::before {
     content: " ";
     position: absolute;
@@ -23,9 +24,9 @@
     bottom: 0;
     right: 0px;
     margin-bottom: -100px;
-    background: #272932;
+    background: $primary-variant;
     border-radius: 0 100% 0 0;
-    box-shadow: 5px -5px 0 5px #1A1C26;
+    box-shadow: 5px -5px 0 5px $primary;
     }
 }
 
