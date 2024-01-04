@@ -4,5 +4,11 @@
 
 * {
   /* border: 0.3px solid red; */
-  font-family: 'roboto';
+  font-family: 'poppins';
+}
+
+body {
+  background-image: url(./assets/img/bg-body.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }

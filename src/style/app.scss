@@ -1,6 +1,76 @@
 // Based Color
-$primary: #0B0B0D;
-$primary-variant: #0F0F0F;
-$secondary:  #00FFFF;
-$secondary-variant: #075985;
+$primary: #222222;
+$primary-variant: #2C3333;
+$secondary:  #0D7377;
+$secondary-variant: #00CDD4;
+$secondary-variant-light: aqua;
 $text-color: #FFFFFF;
+$text-color-variant: #CBE4DE;
+
+// bg-color
+.bg-p {
+  background: $primary;
+}
+.bg-p-v {
+  background: $primary-variant;
+}
+.bg-s {
+  background: $secondary;
+}
+.bg-s-v {
+  background: $secondary-variant;
+}
+
+// text-color
+.ct-p {
+  color: $text-color;
+}
+.ct-p-v {
+  color: $text-color-variant;
+}
+
+// Media query / Reponsive design
+@mixin for-size($size) {
+    @if $size == sm {
+      @media (max-width: 640px) { @content; }
+    } @else if $size == md {
+      @media (min-width: 768px) { @content; }
+    } @else if $size == lg {
+      @media (min-width: 1024px) { @content; }
+    } @else if $size == xl {
+      @media (min-width: 1280px) { @content; }
+    } @else if $size == xxl {
+      @media (min-width: 1536px) { @content; }
+    }
+  }
+//Personal responsive min-width
+@mixin personal-size-min ($responsiveMin) {
+  @media (min-width: $responsiveMin) {@content;}
+}
+//Personal responsive min-width
+@mixin personal-size-max ($responsiveMax) {
+  @media (max-width: $responsiveMax) {@content;}
+}
+
+// heading
+.heading {
+  padding: 4px 5rem;
+  background-color: $primary-variant;
+  border-radius: 0px 25px 25px 25px;
+  border-bottom: 3px solid $secondary;
+  border-right: 3px solid $secondary;
+  margin-bottom: 2rem;
+  cursor: none;
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: $text-color-variant;
+    text-shadow: 2px 2px 4px black;
+  }
+}
+
+// body all
+#body-all {
+  position: fixed;
+  background: linear-gradient(155deg, $primary 50%, #cbe4de00)
+}
