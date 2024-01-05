@@ -1,6 +1,6 @@
-import '../../style/Navbar/profilWelcome.scss';
+import '../../style/Home/homeWelcome.scss';
 
-function ProfilWelcome() {
+function HomeWelcome() {
   return (
     <>
       <div className="container-profil">
@@ -10,7 +10,9 @@ function ProfilWelcome() {
         <div className="profil">
           <div className="side-profil">
             <div className="semi-circle"></div>
-            <div className="circle-profil"></div>
+            <div className="circle-profil">
+              <div className="cp"></div>
+            </div>
             <div className="side-name-profil">
               <h1>Dimas Indra Jaya</h1>
               <p>
@@ -63,4 +65,4 @@ function ProfilWelcome() {
   );
 }
 
-export default ProfilWelcome;
+export default HomeWelcome;
