@@ -17,7 +17,7 @@ function NavbarBottom() {
   return (
     <>
       <div
-        className={`fixed bottom-0 left-0 w-full px-9 md:hidden duration-300 ${
+        className={`fixed bottom-0 left-0 w-full px-9 md:hidden duration-300 z-50 ${
           isOpen ? 'h-20' : 'h-16'
         }`}
       >

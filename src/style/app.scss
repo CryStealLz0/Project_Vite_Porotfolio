@@ -44,11 +44,11 @@ $text-color-variant: #CBE4DE;
     }
   }
 //Personal responsive min-width
-@mixin personal-size-min ($responsiveMin) {
+@mixin p-s-min ($responsiveMin) {
   @media (min-width: $responsiveMin) {@content;}
 }
 //Personal responsive min-width
-@mixin personal-size-max ($responsiveMax) {
+@mixin p-s-max ($responsiveMax) {
   @media (max-width: $responsiveMax) {@content;}
 }
 
@@ -61,16 +61,25 @@ $text-color-variant: #CBE4DE;
   border-right: 3px solid $secondary;
   margin-bottom: 2rem;
   cursor: none;
+  @include p-s-max(640px) {
+    margin-left: 2rem;
+  }
   h1 {
     font-size: 28px;
     font-weight: 700;
     color: $text-color-variant;
     text-shadow: 2px 2px 4px black;
+    @include p-s-max(768px) {
+        font-size: 20px;
+    }
   }
 }
 
 // body all
 #body-all {
   position: fixed;
-  background: linear-gradient(155deg, $primary 50%, #cbe4de00)
+  background: linear-gradient(155deg, $primary 50%, #cbe4de00);
+  @include p-s-max(640px) {
+    background: none;
+  }
 }
