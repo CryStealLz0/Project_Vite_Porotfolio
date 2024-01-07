@@ -1,4 +1,5 @@
 import '../../style/Home/homeWelcome.scss';
+import '../../style/Home/homeWelcomeQuery.scss';
 
 function HomeWelcome() {
   return (
