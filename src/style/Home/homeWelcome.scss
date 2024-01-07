@@ -7,6 +7,9 @@
     display: flex;
     flex-direction: column;
     align-items: start;
+    @include p-s-max (1500px) {
+        padding: 2rem 6rem 4rem 6rem;
+    }
     @include p-s-max (1100px) {
         padding: 2rem 4rem 6rem 4rem;
     }
@@ -172,7 +175,8 @@
                         font-size: 28px;
                     }
                     @include p-s-max (640px) {
-                        color: $text-color;
+                        color: $text-color-variant;
+                        text-shadow: 2px 2px 5px black;
                     }
                 }
             }
@@ -184,7 +188,8 @@
                 }
                 @include p-s-max (640px) {
                     color: $text-color-variant;
-                    text-shadow: 2px 2px 5px $primary;
+                    text-shadow: 2px 2px 4px $primary;
+                    max-width: 390px;
                 }
             }
             .button-des {

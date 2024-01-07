@@ -1,0 +1,107 @@
+@import '/src/style/app.scss';
+
+.container-profil {
+    @include p-s-max (1500px) {
+        padding: 2rem 6rem 4rem 6rem;
+    }
+    @include p-s-max (1100px) {
+        padding: 2rem 4rem 6rem 4rem;
+    }
+    @include p-s-max (768px) {
+        width: 100%;
+    }
+    @include p-s-max (640px) {
+        padding: 2rem 0rem 4rem 0rem;
+    }
+
+    .profil {
+        @include p-s-max (640px) {
+        background: none;
+        box-shadow: none;
+        overflow: visible;
+        }
+        .side-profil {
+            @include p-s-max (1100px) {
+                visibility: hidden;
+                width: 0%;
+            }
+        }
+
+        .content-profil {
+        @include p-s-max (640px) {
+            box-shadow: none;
+        }
+        .description-profil {
+            @include p-s-max (768px) {
+                padding-left: 2rem;
+                width: 70%;
+            }
+            @include p-s-max (640px) {
+                width: 90%;
+            }
+            .heading-des {
+                h1 {
+                    @include p-s-max (768px) {
+                        font-size: 28px;
+                    }
+                    @include p-s-max (640px) {
+                        color: $text-color-variant;
+                        text-shadow: 2px 2px 5px black;
+                    }
+                }
+            }
+            .des {
+                @include p-s-max (768px) {
+                    font-size: 14px;
+                }
+                @include p-s-max (640px) {
+                    color: $text-color-variant;
+                    text-shadow: 2px 2px 4px $primary;
+                    max-width: 390px;
+                }
+            }
+            .button-des {
+                button {
+                    @include p-s-max (768px) {
+                        padding: 2px 1rem;
+                        font-size: 14px;
+                    }
+                    @include p-s-max (640px) {
+                        color: $text-color-variant;
+                        box-shadow: -1px -1px 0px $text-color;
+                        border: 1px solid $text-color;
+                    }
+                }
+            }
+        }
+        .flower-top-profil {
+            @include p-s-max (768px) {
+                right: 5%;
+            }
+            @include p-s-max (640px) {
+                visibility: hidden;
+            }
+        }
+        .profil-img {
+            @include p-s-max(768px) {
+                height: auto;
+                width: 30%;
+            } 
+            @include p-s-max (640px) {
+                position: absolute;
+                z-index: -1;
+                background: $primary-variant;
+                filter: blur(3px);
+                right: 0;
+                top: 0;
+                bottom: 0;
+                width: auto;
+            }
+            img {
+                @include p-s-max (640px) {
+                }
+            }
+        }
+        }
+    }
+}
