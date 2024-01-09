@@ -1,6 +1,7 @@
 @import '/src/style/app.scss';
 
 .container-profil {
+    
     width: calc(100vw - 96px);
     height: 100vh;
     padding: 2rem 8rem 4rem 8rem;
@@ -156,6 +157,32 @@
                     transition: 0.3s;
                     &:hover {
                         border-radius: 0px 0px 0px 0px;
+                    }
+                }
+            }
+            .sosmed-icon {
+                display: flex;
+                li {
+                    margin: 0rem 8px;
+                    a {
+                        display: flex;
+                        padding: 0px 5px;
+                        border-left: 3px solid $secondary;
+                        border-right: 3px solid $secondary;
+                        border-radius: 4px;
+                        transition: 0.3s;
+                            &:hover {
+                            border-left: 3px solid $primary-variant;
+                            border-right: 3px solid $primary-variant;
+                        }
+                        .icon {
+                            color: $primary-variant;
+                            transition: 0.3s;
+                            &:hover {
+                                color: $primary;
+                            }
+
+                        }
                     }
                 }
             }

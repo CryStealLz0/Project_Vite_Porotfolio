@@ -12,6 +12,21 @@
     }
     @include p-s-max (640px) {
         padding: 2rem 0rem 4rem 0rem;
+            position: relative;
+            &::after {
+                content: " ";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-image: url(../../assets/img/bg-welcome.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                opacity: .1;
+                z-index: -10;
+            }
+            
     }
     .profil {
         @include p-s-max (640px) {
@@ -32,11 +47,15 @@
         }
         .description-profil {
             @include p-s-max (768px) {
-                padding-left: 2rem;
+                padding-left: 3rem;
                 width: 70%;
             }
             @include p-s-max (640px) {
                 width: 90%;
+            }
+            @include p-s-max (350px) {
+                width: 100%;
+                padding-left: 1rem;
             }
             .heading-des {
                 h1 {
@@ -58,7 +77,12 @@
                     text-shadow: 2px 2px 4px $primary;
                     max-width: 390px;
                 }
+                @include p-s-max (350px) {
+                    font-size: 12px;
+                    width: 280px;
+                }
             }
+            
             .button-des {
                 button {
                     @include p-s-max (768px) {
@@ -69,6 +93,20 @@
                         color: $text-color-variant;
                         box-shadow: -1px -1px 0px $text-color;
                         border: 1px solid $text-color;
+                    }
+                }
+            }
+            .sosmed-icon {
+                li {
+                    a{
+                        .icon {
+                            @include p-s-max (640px) {
+                                color: $text-color-variant;
+                                &:hover {
+                                    color: $text-color;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -89,8 +127,9 @@
             @include p-s-max (640px) {
                 position: absolute;
                 z-index: -1;
-                background: $primary-variant;
-                filter: blur(3px);
+                background: none;
+                filter: blur(2px);
+                opacity: 0;
                 right: 0;
                 top: 0;
                 bottom: 0;

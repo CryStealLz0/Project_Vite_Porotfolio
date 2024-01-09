@@ -63,6 +63,7 @@ $text-color-variant: #CBE4DE;
   cursor: none;
   @include p-s-max(640px) {
     margin-left: 2rem;
+    margin-bottom: 0rem;
   }
   h1 {
     font-size: 28px;

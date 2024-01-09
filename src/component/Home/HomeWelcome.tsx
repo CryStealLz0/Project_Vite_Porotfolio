@@ -1,5 +1,6 @@
 import '../../style/Home/homeWelcome.scss';
 import '../../style/Home/homeWelcomeQuery.scss';
+import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from 'react-icons/ai';
 
 function HomeWelcome() {
   return (
@@ -51,6 +52,25 @@ function HomeWelcome() {
               </div>
               <div className="button-des">
                 <button>Explore More About Me</button>
+              </div>
+              <div>
+                <ul className="sosmed-icon">
+                  <li>
+                    <a href="#">
+                      <AiFillGithub className="h-8 w-8 icon" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <AiFillLinkedin className="h-8 w-8 icon" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <AiFillInstagram className="h-8 w-8 icon" />
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
             <div className="flower-top-profil">
