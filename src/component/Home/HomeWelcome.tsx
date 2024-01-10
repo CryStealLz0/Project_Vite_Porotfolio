@@ -5,7 +5,7 @@ import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from 'react-icons/ai';
 function HomeWelcome() {
   return (
     <>
-      <div className="container-profil">
+      <div className="container-section">
         <div className="heading">
           <h1>Home</h1>
         </div>
