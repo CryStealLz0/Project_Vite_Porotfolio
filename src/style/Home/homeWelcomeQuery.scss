@@ -28,7 +28,7 @@
             }
             
     }
-    .profil {
+    .content {
         @include p-s-max (640px) {
         background: none;
         box-shadow: none;
@@ -40,7 +40,6 @@
                 width: 0%;
             }
         }
-
         .content-profil {
         @include p-s-max (640px) {
             box-shadow: none;

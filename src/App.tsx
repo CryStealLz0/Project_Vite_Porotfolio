@@ -2,6 +2,7 @@ import './style/app.scss';
 import NavbarLeft from './component/Navbar/NavbarLeft.tsx';
 import NavbarBottom from './component/Navbar/NavbarBottom.tsx';
 import HomeWelcome from './component/Home/HomeWelcome.tsx';
+import AboutProfil from './component/About/AboutProfil.tsx';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
         {/* Navbar End */}
 
         {/* Content */}
-        <HomeWelcome />
+        {/* <HomeWelcome /> */}
+        <AboutProfil />
         {/* Content End */}
       </div>
     </>

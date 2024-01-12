@@ -9,7 +9,7 @@ function HomeWelcome() {
         <div className="heading">
           <h1>Home</h1>
         </div>
-        <div className="profil">
+        <div className="content">
           <div className="side-profil">
             <div className="semi-circle"></div>
             <div className="circle-profil">
