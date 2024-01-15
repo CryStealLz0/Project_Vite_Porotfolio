@@ -5,11 +5,13 @@
 * {
   /* border: 0.3px solid red; */
   font-family: 'poppins';
+  scroll-behavior: smooth;
 }
 
 body {
   background-image: url(./assets/img/bg-body.jpg);
   background-size: 100%;
+  /* overflow: hidden; */
 }
 
 @media only screen and (max-width: 640px) {

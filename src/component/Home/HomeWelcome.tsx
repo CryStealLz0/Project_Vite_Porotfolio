@@ -5,12 +5,12 @@ import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from 'react-icons/ai';
 function HomeWelcome() {
   return (
     <>
-      <div className="container-section">
+      <div className="container-section" id="home">
         <div className="heading">
           <h1>Home</h1>
         </div>
         <div className="content">
-          <div className="side-profil">
+          <div className="side-home-content">
             <div className="semi-circle"></div>
             <div className="circle-profil">
               <div className="cp"></div>
@@ -24,7 +24,9 @@ function HomeWelcome() {
             <div className="side-bar-profil">
               <ul>
                 <li className="side-bar-profil-home">HOME</li>
-                <li>ABOUT</li>
+                <li>
+                  <a href="#about">ABOUT</a>
+                </li>
                 <li>SKILLS</li>
                 <li>EXPERIENCE</li>
                 <li>CONTACT</li>
@@ -37,7 +39,7 @@ function HomeWelcome() {
               </p>
             </div>
           </div>
-          <div className="content-profil">
+          <div className="home-content">
             <div className="description-profil">
               <div className="heading-des">
                 <h1>I am</h1>

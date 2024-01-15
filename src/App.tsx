@@ -14,7 +14,7 @@ function App() {
         {/* Navbar End */}
 
         {/* Content */}
-        {/* <HomeWelcome /> */}
+        <HomeWelcome />
         <AboutProfil />
         {/* Content End */}
       </div>

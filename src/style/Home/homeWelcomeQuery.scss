@@ -34,13 +34,13 @@
         box-shadow: none;
         overflow: visible;
         }
-        .side-profil {
+        .side-content {
             @include p-s-max (1100px) {
                 visibility: hidden;
                 width: 0%;
             }
         }
-        .content-profil {
+        .home-content {
         @include p-s-max (640px) {
             box-shadow: none;
         }

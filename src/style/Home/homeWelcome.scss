@@ -17,7 +17,7 @@
         height: 100%;
         background: $secondary-variant;
         box-shadow: 8px 8px 20px black;
-        .side-profil {
+        .side-home-content {
             position: relative;
             display: flex;
             overflow: hidden;
@@ -116,7 +116,7 @@
             }
         }
 
-        .content-profil {
+        .home-content {
         position: relative;
         display: flex;
         justify-content: space-between;
