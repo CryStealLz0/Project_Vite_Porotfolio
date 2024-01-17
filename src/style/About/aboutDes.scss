@@ -18,10 +18,10 @@
     .container-des-about {
         height: auto;
         display: flex;
-        .des-a-1 {
+        .des-a {
             width: 500px;
             height: 100%;
-            padding-right: 1rem;
+            padding: 0rem 1rem;
             display: flex;
             flex-direction: column;
             align-items: start;
@@ -29,46 +29,10 @@
             .heading-des {
                 h1 {
                     font-family: 'Playfair Display';
-                    font-size: 38px;
+                    font-size: 32px;
                     font-weight: 800;
                     color: $primary;
-                    line-height: 50px;
-                }
-            }
-            .des {
-                padding-top: 1rem;
-                color: $primary-variant;
-            }
-            .button-des {
-                padding: 1.5rem 0rem;
-                button {
-                    padding: 5px 1rem ;
-                    border: 2px solid $primary;
-                    color: $primary;
-                    border-radius: 0px 0px 25px 0px;
-                    box-shadow: -1px -1px 0px black;
-                    transition: 0.3s;
-                    &:hover {
-                        border-radius: 0px 0px 0px 0px;
-                    }
-                }
-            }
-        }
-        .des-a-2 {
-            width:  500px;
-            height: 100%;
-            padding-right: 1rem;
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            justify-content: center;
-            .heading-des {
-                h1 {
-                    font-family: 'Playfair Display';
-                    font-size: 38px;
-                    font-weight: 800;
-                    color: $primary;
-                    line-height: 50px;
+                    line-height: 40px;
                 }
             }
             .des {

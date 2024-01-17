@@ -30,14 +30,20 @@ function AboutProfil() {
             <div className="side-bar-profil">
               <ul>
                 <li className="side-bar-profil-home">
-                  <a href="#a">ABOUT</a>
+                  <a href="#about-about">ABOUT</a>
                 </li>
                 <li>
-                  <a href="#s">SCHOOL</a>
+                  <a href="#about-school">SCHOOL</a>
                 </li>
-                <li>ACTIVITY</li>
-                <li>HOBBY</li>
-                <li>PERSONAL DATA</li>
+                <li>
+                  <a href="#about-activity">ACTIVITY</a>
+                </li>
+                <li>
+                  <a href="#about-hobby">HOBBY</a>
+                </li>
+                <li>
+                  <a href="#about-personal">PERSONAL DATA</a>
+                </li>
               </ul>
             </div>
             <div className="copy-right">
