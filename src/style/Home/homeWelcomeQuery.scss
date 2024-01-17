@@ -1,40 +1,12 @@
 @import '/src/style/app.scss';
 
-.container-section {
-    @include p-s-max (1500px) {
-        padding: 2rem 6rem 4rem 6rem;
-    }
-    @include p-s-max (1100px) {
-        padding: 2rem 4rem 6rem 4rem;
-    }
-    @include p-s-max (768px) {
-        width: 100%;
-    }
-    @include p-s-max (640px) {
-        padding: 2rem 0rem 4rem 0rem;
-            position: relative;
-            &::after {
-                content: " ";
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background-image: url(../../assets/img/bg-welcome.jpg);
-                background-size: cover;
-                background-repeat: no-repeat;
-                opacity: .1;
-                z-index: -10;
-            }
-            
-    }
     .content {
         @include p-s-max (640px) {
         background: none;
         box-shadow: none;
         overflow: visible;
         }
-        .side-content {
+        .side-home-content {
             @include p-s-max (1100px) {
                 visibility: hidden;
                 width: 0%;
@@ -141,4 +113,3 @@
         }
         }
     }
-}

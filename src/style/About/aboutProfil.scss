@@ -1,14 +1,7 @@
 @import '/src/style/app.scss';
+@import '../StyleComponent/containerSection.scss';
 
-.container-section {
-    
-    width: calc(100vw - 96px);
-    height: 100vh;
-    padding: 2rem 8rem 4rem 8rem;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    .content {
+    .content-about {
         display: flex;
         justify-content: space-between;
         align-items: end;
@@ -19,7 +12,7 @@
         box-shadow: 8px 8px 20px black;
         
 
-        .home-content {
+        .about-content {
         position: relative;
         display: flex;
         justify-content: space-between;
@@ -53,68 +46,7 @@
                 margin-left: -2px;
             }
         }
-        .description-about {
-            height: 100%;
-            width: 65%;
-            padding-left: 3rem;
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            justify-content: center;
-            .heading-des {
-                h1 {
-                    font-family: 'Playfair Display';
-                    font-size: 38px;
-                    font-weight: 800;
-                    color: $primary;
-                    line-height: 50px;
-                }
-            }
-            .des {
-                padding-top: 1rem;
-                color: $primary-variant;
-            }
-            .button-des {
-                padding: 1.5rem 0rem;
-                button {
-                    padding: 5px 1rem ;
-                    border: 2px solid $primary;
-                    color: $primary;
-                    border-radius: 0px 0px 25px 0px;
-                    box-shadow: -1px -1px 0px black;
-                    transition: 0.3s;
-                    &:hover {
-                        border-radius: 0px 0px 0px 0px;
-                    }
-                }
-            }
-            .sosmed-icon {
-                display: flex;
-                li {
-                    margin: 0rem 8px;
-                    a {
-                        display: flex;
-                        padding: 0px 5px;
-                        border-left: 3px solid $secondary;
-                        border-right: 3px solid $secondary;
-                        border-radius: 4px;
-                        transition: 0.3s;
-                            &:hover {
-                            border-left: 3px solid $primary-variant;
-                            border-right: 3px solid $primary-variant;
-                        }
-                        .icon {
-                            color: $primary-variant;
-                            transition: 0.3s;
-                            &:hover {
-                                color: $primary;
-                            }
-
-                        }
-                    }
-                }
-            }
-        }
+        
         
         }
         .side-about-content {
@@ -216,4 +148,3 @@
             }
         }
     }
-}

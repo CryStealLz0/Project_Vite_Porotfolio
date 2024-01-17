@@ -53,7 +53,9 @@ function HomeWelcome() {
                 </p>
               </div>
               <div className="button-des">
-                <button>Explore More About Me</button>
+                <button>
+                  <a href="#about">Explore More About Me</a>
+                </button>
               </div>
               <div>
                 <ul className="sosmed-icon">

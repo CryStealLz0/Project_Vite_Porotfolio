@@ -1,0 +1,123 @@
+@import '../app.scss';
+
+.container-about {
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+
+}
+
+.description-about {
+    position: relative;
+    display: flex;
+    height: auto;
+    width: 500px;
+    margin-bottom: 5rem;
+    overflow: hidden;
+    .container-des-about {
+        height: auto;
+        display: flex;
+        .des-a-1 {
+            width: 500px;
+            height: 100%;
+            padding-right: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            .heading-des {
+                h1 {
+                    font-family: 'Playfair Display';
+                    font-size: 38px;
+                    font-weight: 800;
+                    color: $primary;
+                    line-height: 50px;
+                }
+            }
+            .des {
+                padding-top: 1rem;
+                color: $primary-variant;
+            }
+            .button-des {
+                padding: 1.5rem 0rem;
+                button {
+                    padding: 5px 1rem ;
+                    border: 2px solid $primary;
+                    color: $primary;
+                    border-radius: 0px 0px 25px 0px;
+                    box-shadow: -1px -1px 0px black;
+                    transition: 0.3s;
+                    &:hover {
+                        border-radius: 0px 0px 0px 0px;
+                    }
+                }
+            }
+        }
+        .des-a-2 {
+            width:  500px;
+            height: 100%;
+            padding-right: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            .heading-des {
+                h1 {
+                    font-family: 'Playfair Display';
+                    font-size: 38px;
+                    font-weight: 800;
+                    color: $primary;
+                    line-height: 50px;
+                }
+            }
+            .des {
+                padding-top: 1rem;
+                color: $primary-variant;
+            }
+            .button-des {
+                padding: 1.5rem 0rem;
+                button {
+                    padding: 5px 1rem ;
+                    border: 2px solid $primary;
+                    color: $primary;
+                    border-radius: 0px 0px 25px 0px;
+                    box-shadow: -1px -1px 0px black;
+                    transition: 0.3s;
+                    &:hover {
+                        border-radius: 0px 0px 0px 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+    .sosmed-icon-a {
+        display: flex;
+        margin-bottom: 1rem;
+        gap: 20px;
+            li {
+                a {
+                    display: flex;
+                    padding: 0px 5px;
+                    border-left: 3px solid $secondary;
+                    border-right: 3px solid $secondary;
+                    border-radius: 4px;
+                    transition: 0.3s;
+                        &:hover {
+                        border-left: 3px solid $primary-variant;
+                        border-right: 3px solid $primary-variant;
+                    }
+                    .icon {
+                        color: $primary-variant;
+                        transition: 0.3s;
+                        &:hover {
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    

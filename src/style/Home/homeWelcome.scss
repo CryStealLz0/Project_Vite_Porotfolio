@@ -1,14 +1,7 @@
 @import '/src/style/app.scss';
+@import '../StyleComponent/containerSection.scss';
 
-.container-section {
-    
-    width: calc(100vw - 96px);
-    height: 100vh;
-    padding: 2rem 8rem 4rem 8rem;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    .content {
+.content {
         display: flex;
         justify-content: space-between;
         align-items: end;
@@ -181,7 +174,6 @@
                             &:hover {
                                 color: $primary;
                             }
-
                         }
                     }
                 }
@@ -212,4 +204,3 @@
         }
         }
     }
-}
