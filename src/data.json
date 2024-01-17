@@ -1,0 +1,44 @@
+{
+  "contentAbout": [
+    {
+      "id": "about-about",
+      "heading1": "Hello guys,",
+      "heading2": "you can call me Dimas.",
+      "description": "I am a website developer with a passion for adding value to every project. Together, let's transform ideas into extraordinary digital realities.",
+      "buttons": "Explore More",
+      "idNext": "#about-school"
+    },
+    {
+      "id": "about-school",
+      "heading1": "I am currently",
+      "heading2": "studying at Pamulang University.",
+      "description": "I attended elementary school at Bakti Jaya, middle school at Al-Inayah Islamic boarding school, vocational high school at Sasmita Jaya 1, and I am currently in my fourth semester at Pamulang University.",
+      "buttons": "Explore More",
+      "idNext": "#about-activity"
+    },
+    {
+      "id": "about-activity",
+      "heading1": "Exploring new realms",
+      "heading2": "of knowledge and striving for excellence.",
+      "description": "Currently, I am exploring my creative potential in website development, applying the knowledge I have acquired, and constantly seeking fresh inspiration to meet the challenges of future evolution.",
+      "buttons": "Explore More",
+      "idNext": "#about-hobby"
+    },
+    {
+      "id": "about-hobby",
+      "heading1": "Striving to deliver",
+      "heading2": "excellence in every endeavor I undertake.",
+      "description": "As of now, web development has become my avid interest. Hence, I am eagerly taking this chance to cultivate intriguing websites, turning my passion into a fulfilling hobby.",
+      "buttons": "Explore More",
+      "idNext": "#about-personal"
+    },
+    {
+      "id": "about-personal",
+      "heading1": "I reside in South Tangerang,",
+      "heading2": "precisely in the Pamulang Permata.",
+      "description": "I reside in the city of South Tangerang, precisely in Bakti Jaya district, on Permata Pamulang Street. I was born on October 5, 2002. Currently, I am not employed, but I work as a martial arts coach near my home.",
+      "buttons": "Back to About",
+      "idNext": "#about-about"
+    }
+  ]
+}

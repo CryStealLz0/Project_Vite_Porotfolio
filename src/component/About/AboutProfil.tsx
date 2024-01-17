@@ -1,8 +1,14 @@
 import '../../style/About/aboutProfil.scss';
 import '../../style/About/aboutProfilQuery.scss';
+
+import { IBaseData } from '../../data';
+import data from '../../data.json';
+
 import AboutDes from '../About/AboutDes.tsx';
+import React from 'react';
 
 function AboutProfil() {
+  const [responses] = React.useState<IBaseData>(data);
   return (
     <>
       <div className="container-section" id="about">
@@ -14,7 +20,7 @@ function AboutProfil() {
             <div className="about-profil-img">
               <img src="./src/assets/img/indra.png" alt="" />
             </div>
-            <AboutDes />
+            <AboutDes contentAboutData={responses.contentAbout} />
           </div>
           <div className="side-about-content">
             <div className="semi-circle"></div>
@@ -42,7 +48,7 @@ function AboutProfil() {
                   <a href="#about-hobby">HOBBY</a>
                 </li>
                 <li>
-                  <a href="#about-personal">PERSONAL DATA</a>
+                  <a href="#about-personal">PERSONAL</a>
                 </li>
               </ul>
             </div>
