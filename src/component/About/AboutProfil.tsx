@@ -7,8 +7,18 @@ import data from '../../data.json';
 import AboutDes from '../About/AboutDes.tsx';
 import React from 'react';
 
+import { SetStateAction, useState } from 'react'; // Import useState
+
 function AboutProfil() {
   const [responses] = React.useState<IBaseData>(data);
+
+  const [activeIcon, setActiveIcon] = useState('about'); // State untuk ikon yang aktif
+
+  // Fungsi untuk mengubah ikon yang aktif
+  const handleClick = (iconName: SetStateAction<string>) => {
+    setActiveIcon(iconName);
+  };
+
   return (
     <>
       <div className="container-section" id="about">
@@ -35,19 +45,44 @@ function AboutProfil() {
             </div>
             <div className="side-bar-profil">
               <ul>
-                <li className="side-bar-profil-home">
+                <li
+                  className={` ${
+                    activeIcon == 'about' ? 'side-bar-profil-home' : ' '
+                  }`}
+                  onClick={() => handleClick('about')}
+                >
                   <a href="#about-about">ABOUT</a>
                 </li>
-                <li>
+                <li
+                  className={` ${
+                    activeIcon == 'school' ? 'side-bar-profil-home' : ' '
+                  }`}
+                  onClick={() => handleClick('school')}
+                >
                   <a href="#about-school">SCHOOL</a>
                 </li>
-                <li>
+                <li
+                  className={` ${
+                    activeIcon == 'activity' ? 'side-bar-profil-home' : ' '
+                  }`}
+                  onClick={() => handleClick('activity')}
+                >
                   <a href="#about-activity">ACTIVITY</a>
                 </li>
-                <li>
+                <li
+                  className={` ${
+                    activeIcon == 'hobby' ? 'side-bar-profil-home' : ' '
+                  }`}
+                  onClick={() => handleClick('hobby')}
+                >
                   <a href="#about-hobby">HOBBY</a>
                 </li>
-                <li>
+                <li
+                  className={` ${
+                    activeIcon == 'personal' ? 'side-bar-profil-home' : ' '
+                  }`}
+                  onClick={() => handleClick('personal')}
+                >
                   <a href="#about-personal">PERSONAL</a>
                 </li>
               </ul>

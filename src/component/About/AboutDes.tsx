@@ -21,9 +21,9 @@ function AboutDes({ contentAboutData }: IContentAboutProps) {
                     <p>{ContentAbout.description}</p>
                   </div>
                   <div className="button-des">
-                    <button>
-                      <a href={ContentAbout.idNext}>{ContentAbout.buttons}</a>
-                    </button>
+                    <a href={ContentAbout.idNext}>
+                      <button>{ContentAbout.buttons}</button>
+                    </a>
                   </div>
                 </div>
               ))
