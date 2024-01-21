@@ -62,6 +62,8 @@
         display: flex;
         margin-bottom: 1rem;
         gap: 20px;
+        justify-content: end;
+        margin-right: 2rem;
             li {
                 a {
                     display: flex;
