@@ -25,7 +25,7 @@ body::after {
 }
 
 @media only screen and (max-width: 640px) {
-  body {
+  body::after {
     background: #222222;
     background-image: none;
   }

@@ -47,9 +47,14 @@ $text-color-variant: #CBE4DE;
 @mixin p-s-min ($responsiveMin) {
   @media (min-width: $responsiveMin) {@content;}
 }
-//Personal responsive min-width
+//Personal responsive max-width
 @mixin p-s-max ($responsiveMax) {
   @media (max-width: $responsiveMax) {@content;}
+}
+
+//Personal responsive max-heigh
+@mixin p-s-max-h ($responsiveMaxH) {
+  @media (max-heigh: $responsiveMaxH) {@content;}
 }
 
 // heading

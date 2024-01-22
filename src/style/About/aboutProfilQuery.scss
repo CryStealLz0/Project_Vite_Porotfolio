@@ -14,4 +14,74 @@
                 }
             }
         }
-    }
+        .side-about-content {
+            @include p-s-max (900px) {
+                width: 35px;
+            }
+            .semi-circle {
+                @include p-s-max (900px) {
+                    visibility: hidden;
+                    display: none;
+                }
+            }
+            .circle-profil {
+                @include p-s-max (900px) {
+                    visibility: hidden;
+                    display: none;
+                }
+            }
+            .side-name-profil {
+                    @include p-s-max (900px) {
+                        visibility: hidden;
+                        display: none;
+                    }
+                }
+            }
+            .side-bar-profil {
+                @include p-s-max (900px) {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                }
+                ul {
+                    @include p-s-max (900px) {
+                        height: 100%;
+                        width: 100%;
+                        li {
+                                writing-mode: vertical-lr;
+                            &:hover::after {
+                                display: none;
+                            }
+                            &::after {
+                                display: none;
+                            }
+                            &:hover::before {
+                                height: 100%;
+                                background: $secondary-variant-light;
+                            }
+                            &::before {
+                                content: " ";
+                            display: flex;
+                            position: absolute;
+                            margin: auto;
+                            top: 0;
+                            left: 0;
+                            bottom: 0px;
+                            width: 3px;
+                            height: 0%;
+                            transition: 0.3s;
+                            border-radius: 1px;
+                            z-index: -10px;
+                            }
+                        }
+                    } 
+                }
+            }
+            .copy-right {
+                @include p-s-max (900px) {
+                    display: none;
+                    visibility: hidden;
+                }
+            }
+        }

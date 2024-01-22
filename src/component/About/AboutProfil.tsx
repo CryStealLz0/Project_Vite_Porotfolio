@@ -46,16 +46,14 @@ function AboutProfil() {
             <div className="side-bar-profil">
               <ul>
                 <li
-                  className={` ${
-                    activeIcon == 'about' ? 'side-bar-profil-home' : ' '
-                  }`}
+                  className={` ${activeIcon == 'about' ? 'color-active' : ' '}`}
                   onClick={() => handleClick('about')}
                 >
                   <a href="#about-about">ABOUT</a>
                 </li>
                 <li
                   className={` ${
-                    activeIcon == 'school' ? 'side-bar-profil-home' : ' '
+                    activeIcon == 'school' ? 'color-active' : ' '
                   }`}
                   onClick={() => handleClick('school')}
                 >
@@ -63,23 +61,21 @@ function AboutProfil() {
                 </li>
                 <li
                   className={` ${
-                    activeIcon == 'activity' ? 'side-bar-profil-home' : ' '
+                    activeIcon == 'activity' ? 'color-active' : ' '
                   }`}
                   onClick={() => handleClick('activity')}
                 >
                   <a href="#about-activity">ACTIVITY</a>
                 </li>
                 <li
-                  className={` ${
-                    activeIcon == 'hobby' ? 'side-bar-profil-home' : ' '
-                  }`}
+                  className={` ${activeIcon == 'hobby' ? 'color-active' : ' '}`}
                   onClick={() => handleClick('hobby')}
                 >
                   <a href="#about-hobby">HOBBY</a>
                 </li>
                 <li
                   className={` ${
-                    activeIcon == 'personal' ? 'side-bar-profil-home' : ' '
+                    activeIcon == 'personal' ? 'color-active' : ' '
                   }`}
                   onClick={() => handleClick('personal')}
                 >
