@@ -3,7 +3,7 @@
 .container-about {
     height: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: space-evenly;
     flex-direction: column;
 
 }
@@ -13,8 +13,15 @@
     display: flex;
     height: auto;
     width: 500px;
-    margin-bottom: 5rem;
     overflow: hidden;
+    @include p-s-max (640px) {
+        width: 450px;
+    }
+    @include p-s-max (500px) {
+        width: 300px;
+        height: 300px;
+        overflow-y: auto;
+    }
     .container-des-about {
         height: auto;
         display: flex;
@@ -26,6 +33,18 @@
             flex-direction: column;
             align-items: start;
             justify-content: center;
+            @include p-s-max (640px) {
+                width: 450px;
+                padding: 0rem 1rem;
+                padding-left: 3rem;
+            }
+            @include p-s-max (500px) {
+                width: 300px;
+                height: auto;
+                justify-content: start;
+                padding-left: 1rem;
+                // padding: 0rem 1rem;
+            }
             .heading-des {
                 h1 {
                     font-family: 'Playfair Display';
@@ -33,11 +52,30 @@
                     font-weight: 800;
                     color: $primary;
                     line-height: 40px;
+                    @include p-s-max (768px) {
+                        font-size: 28px;
+                    }
+                    @include p-s-max (640px) {
+                        color: $text-color-variant;
+                        text-shadow: 2px 2px 5px black;
+                    }
                 }
             }
             .des {
                 padding-top: 1rem;
                 color: $primary-variant;
+                @include p-s-max (768px) {
+                    font-size: 14px;
+                }
+                @include p-s-max (640px) {
+                    color: $text-color-variant;
+                    text-shadow: 2px 2px 4px $primary;
+                    max-width: 390px;
+                }
+                @include p-s-max (350px) {
+                    font-size: 12px;
+                    width: 280px;
+                }
             }
             .button-des {
                 padding: 1.5rem 0rem;
@@ -51,7 +89,17 @@
                     &:hover {
                         border-radius: 0px 0px 0px 0px;
                     }
+                    @include p-s-max (768px) {
+                        padding: 2px 1rem;
+                        font-size: 14px;
+                    }
+                    @include p-s-max (640px) {
+                        color: $text-color-variant;
+                        box-shadow: -1px -1px 0px $text-color;
+                        border: 1px solid $text-color;
+                    }
                 }
+                
             }
         }
     }
@@ -64,6 +112,9 @@
         gap: 20px;
         justify-content: end;
         margin-right: 2rem;
+        @include p-s-max (500px){
+            margin-right: 5rem;
+        }
             li {
                 a {
                     display: flex;
@@ -81,6 +132,12 @@
                         transition: 0.3s;
                         &:hover {
                             color: $primary;
+                        }
+                        @include p-s-max (640px) {
+                            color: $text-color-variant;
+                            &:hover {
+                                color: $text-color;
+                            }
                         }
                     }
                 }

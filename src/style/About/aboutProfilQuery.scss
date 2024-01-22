@@ -1,8 +1,20 @@
     @import '/src/style/app.scss';
 
     .content-about {
+        @include p-s-max (640px) {
+            background: none;
+            box-shadow: none;    
+            padding-right: 2rem;
+        }
         .about-content {
+            @include p-s-max (640px) {
+                box-shadow: none;
+            }
             .about-profil-img {
+                @include p-s-max (640px) {
+                visibility: hidden;
+                display: none;
+                }
                 img {
                     @include p-s-max(1400px) {
                         height: auto;
@@ -16,7 +28,10 @@
         }
         .side-about-content {
             @include p-s-max (900px) {
-                width: 35px;
+                width: 38px;
+                background: none;
+                height: 100%;
+                overflow: auto;
             }
             .semi-circle {
                 @include p-s-max (900px) {
@@ -42,14 +57,26 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    height: 100%;
+                    // overflow: auto;
                 }
                 ul {
                     @include p-s-max (900px) {
-                        height: 100%;
-                        width: 100%;
+                        a {
+                            padding: 8px 0px;
+                        }
                         li {
-                                writing-mode: vertical-lr;
+                            background: $primary-variant;   
+                            border-radius: 0px 100% 100% 0px;
+                            border-top: 2px solid $secondary;
+                            border-right: 2px solid $secondary;
+                            border-bottom: 2px solid $secondary;
+                            writing-mode: vertical-lr;
+                            @include p-s-max (640px) {
+                                font-size: 12px;
+                            }
+                            @include p-s-max (900px) {
+                                font-size: 14px;
+                            }
                             &:hover::after {
                                 display: none;
                             }
