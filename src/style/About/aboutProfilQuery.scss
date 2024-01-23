@@ -31,7 +31,10 @@
                 width: 38px;
                 background: none;
                 height: 100%;
-                overflow: auto;
+                overflow-y: auto;
+            }
+            @include p-s-max (600px) {
+                overflow: hidden;
             }
             .semi-circle {
                 @include p-s-max (900px) {
