@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 * {
-  /* border: 0.3px solid red; */
   font-family: 'poppins';
   scroll-behavior: smooth;
 }

@@ -83,7 +83,6 @@ $text-color-variant: #CBE4DE;
 
 // body all
 #body-all {
-//   position: fixed;
 overflow: hidden;
   background: linear-gradient(100deg, $primary 50%, #cbe4de00);
   @include p-s-max(640px) {
