@@ -19,7 +19,18 @@ function Sertificate() {
                   <div className="choice-buttons"></div>
                 </div>
                 <div className="choice">
-                  <div className="choice-isi"></div>
+                  <div className="choice-isi">
+                    <div className="img-choice"></div>
+                    <div className="des-choice">
+                      <h1>lorem10</h1>
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Recusandae consequuntur hic facilis, placeat
+                        molestias animi nobis veniam accusantium quibusdam
+                        dignissimos?
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
