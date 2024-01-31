@@ -57,6 +57,7 @@
                 background: $secondary;
                 padding:  1rem 0rem;
                 padding-left: 1rem; 
+                padding-right: 5px;
                 .choice-isi {
                     display: flex;
                     box-sizing: border-box;
@@ -83,8 +84,12 @@
                         display: block;
                         width: 80%;
                         height: 100%;
-                        overflow: hidden;
+                        overflow-x: auto;
                         color: white;
+                        &::-webkit-scrollbar {
+                            width: 0px;
+                            
+                        }
                         h1 {
                             font-size: 12px;
                             font-weight: 600;

@@ -65,24 +65,25 @@ function NavbarLeft() {
                   </li>
                 </div>
               </a>
-              <div
-                className={`h-20 ml-3 rounded-l-full flex justify-center items-center mr-[-1px] relative  ${
-                  activeIcon === 'project'
-                    ? 'bg-p ct-p border-l-4 border-l-[#00CDD4] '
-                    : 'border-l-4 border-l-[#0D7377] text-[#CBE4DE] hover:border-l-[#00CDD4] hover:text-white cursor-pointer'
-                }`}
-                onClick={() => handleClick('project')} // Mengatur onClick
-              >
-                <span
-                  className={`${
-                    activeIcon === 'project' ? 'span-navbar-active' : ''
+              <a href="#sertificate">
+                <div
+                  className={`h-20 ml-3 rounded-l-full flex justify-center items-center mr-[-1px] relative  ${
+                    activeIcon === 'project'
+                      ? 'bg-p ct-p border-l-4 border-l-[#00CDD4] '
+                      : 'border-l-4 border-l-[#0D7377] text-[#CBE4DE] hover:border-l-[#00CDD4] hover:text-white cursor-pointer'
                   }`}
-                />
-
-                <li>
-                  <BiSolidFolderOpen className="h-8 w-8 mr-[-10px]" />
-                </li>
-              </div>
+                  onClick={() => handleClick('project')} // Mengatur onClick
+                >
+                  <span
+                    className={`${
+                      activeIcon === 'project' ? 'span-navbar-active' : ''
+                    }`}
+                  />
+                  <li>
+                    <BiSolidFolderOpen className="h-8 w-8 mr-[-10px]" />
+                  </li>
+                </div>
+              </a>
               <div
                 className={`h-20 ml-3 rounded-l-full flex justify-center items-center mr-[-1px] relative  ${
                   activeIcon === 'skill'

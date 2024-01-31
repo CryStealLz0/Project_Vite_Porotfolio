@@ -17,7 +17,9 @@ function App() {
         {/* Content */}
         <HomeWelcome />
         <AboutProfil />
+        {/* <div className="hidden"> */}
         <Sertificate />
+        {/* </div> */}
         {/* Content End */}
       </div>
     </>
