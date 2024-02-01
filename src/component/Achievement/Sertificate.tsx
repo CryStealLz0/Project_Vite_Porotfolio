@@ -6,7 +6,7 @@ function Sertificate() {
       <div>
         <div className="container-section" id="achievement">
           <div className="heading">
-            <h1>Sertificate</h1>
+            <h1>Achievement</h1>
           </div>
           <div className="content-achievement">
             <div className="achievement-content">

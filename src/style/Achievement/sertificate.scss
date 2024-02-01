@@ -59,6 +59,7 @@
                 padding-left: 1rem; 
                 padding-right: 5px;
                 overflow-x: auto;
+                border-bottom: 5px solid $secondary-variant ;
                 &::-webkit-scrollbar {
                     width: 0px;
                 }
@@ -89,16 +90,17 @@
                         width: 80%;
                         height: 100%;
                         overflow-x: auto;
-                        color: white;
                         &::-webkit-scrollbar {
                             width: 0px;
                             
                         }
                         h1 {
+                            color: $text-color;
                             font-size: 12px;
                             font-weight: 600;
                         }
                         p {
+                            color: $text-color-variant;
                             font-size: 10px;
                         }
                     }   
