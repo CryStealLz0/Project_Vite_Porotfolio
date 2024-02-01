@@ -12,7 +12,11 @@ function Experience() {
           <div className="content-experience">
             <div className="experience-content">
               <div className="container-experience">
-                <div className="experience-img"></div>
+                <div className="experience-img">
+                  <img src="./src/assets/Sertifikat/ino1.png" alt="" />
+                  <img src="./src/assets/Sertifikat/ino2.png" alt="" />
+                  <img src="./src/assets/Sertifikat/ino3.png" alt="" />
+                </div>
                 <div className="experience-des"></div>
               </div>
               <div className="container-choice">
