@@ -65,7 +65,7 @@ function NavbarLeft() {
                   </li>
                 </div>
               </a>
-              <a href="#achievement">
+              <a href="#experience">
                 <div
                   className={`h-20 ml-3 rounded-l-full flex justify-center items-center mr-[-1px] relative  ${
                     activeIcon === 'project'

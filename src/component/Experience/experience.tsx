@@ -1,22 +1,31 @@
-import '../../style/Achievement/sertificate.scss';
+import '../../style/Experience/experience.scss';
+import { AiFillCaretRight } from 'react-icons/ai';
 
-function Sertificate() {
+function Experience() {
   return (
     <>
       <div>
-        <div className="container-section" id="achievement">
+        <div className="container-section" id="experience">
           <div className="heading">
-            <h1>Achievement</h1>
+            <h1>Experience</h1>
           </div>
-          <div className="content-achievement">
-            <div className="achievement-content">
-              <div className="container-achievement">
-                <div className="achievement-img"></div>
-                <div className="achievement-des"></div>
+          <div className="content-experience">
+            <div className="experience-content">
+              <div className="container-experience">
+                <div className="experience-img"></div>
+                <div className="experience-des"></div>
               </div>
               <div className="container-choice">
                 <div className="choice-des">
-                  <div className="choice-buttons"></div>
+                  <h1>My Sertificate</h1>
+                  <div className="choice-buttons">
+                    <h1>
+                      Go Project
+                      <span>
+                        <AiFillCaretRight />
+                      </span>
+                    </h1>
+                  </div>
                 </div>
                 <div className="choice">
                   <div className="choice-isi">
@@ -149,4 +158,4 @@ function Sertificate() {
   );
 }
 
-export default Sertificate;
+export default Experience;

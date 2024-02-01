@@ -3,7 +3,7 @@ import NavbarLeft from './component/Navbar/NavbarLeft.tsx';
 import NavbarBottom from './component/Navbar/NavbarBottom.tsx';
 import HomeWelcome from './component/Home/HomeWelcome.tsx';
 import AboutProfil from './component/About/AboutProfil.tsx';
-import Sertificate from './component/Achievement/Sertificate.tsx';
+import Experience from './component/Experience/experience.tsx';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         <HomeWelcome />
         <AboutProfil />
         {/* <div className="hidden"> */}
-        <Sertificate />
+        <Experience />
         {/* </div> */}
         {/* Content End */}
       </div>

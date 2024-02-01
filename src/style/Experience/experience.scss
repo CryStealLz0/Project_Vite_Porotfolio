@@ -1,24 +1,24 @@
 @import '../app.scss';
 
-.content-achievement {
+.content-experience {
     width: 100%;
     height: 100%;
     overflow: hidden;
     background: $secondary;
-    .achievement-content {
+    .experience-content {
         height: 100%;
         width: 100%;    
         display: flex;
-        .container-achievement {
+        .container-experience {
             height: 100%;
             width: 100%;
             padding: 1rem 1rem;
-            .achievement-img {
+            .experience-img {
                 height: 80%;
                 width: 100%;
                 background: grey;
             }
-            .achievement-des {
+            .experience-des {
                 height: 20%;
                 width: 100%;
                 background: red;
@@ -30,14 +30,18 @@
             background: $secondary-variant;
             .choice-des {
                 position: relative;
+                display: flex;
+                justify-content: center;
                 height: 25%;
                 width: 100%;
-                // background: $secondar;
                 overflow: hidden;
+                padding-top: 1rem;
                 box-shadow: 0px 20px 20px -10px black;
                 z-index: 1;
-                ::before {
-                    content: " ";
+                font-size: 24px;
+                font-weight: 700;
+                &::before {
+                    content: "";
                     position: absolute;
                     width: 100%;
                     height: 100%;
@@ -48,6 +52,44 @@
                     top: 50%;
                     bottom: 0;
                     right: 0;
+                }
+                h1 {
+                    color: $primary;
+                    
+                }
+                .choice-buttons {
+                    position:absolute;
+                    display: flex;
+                    justify-content: center;
+                    bottom: 10px;
+                    left: 0;
+                    right: 0;
+                    width: 100%;
+                    color: $text-color-variant;
+                    z-index: 10;
+                    text-shadow: 2px 2px 5px black;
+                    h1 {
+                        display: flex;
+                        color: $text-color-variant;
+                        text-shadow: 2px 2px 5px black;
+                        cursor: pointer;
+                        transition: 0.3s;
+                        &:hover {
+                            transform: translateX(-4px);
+                            color: $text-color;
+                        }
+                        &:hover span {
+                            transform: translateX(8px);
+                            color: $text-color;
+                        }
+                        span {
+                            display: flex;
+                            align-items: center;
+                            padding-left: 10px;
+                            transition: 0.3s;
+                            filter: drop-shadow(2px 2px 4px black);
+                        }
+                    }
                 }
             }
 
