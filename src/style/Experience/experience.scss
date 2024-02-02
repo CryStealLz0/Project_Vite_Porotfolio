@@ -9,17 +9,19 @@
         height: 100%;
         width: 100%;    
         display: flex;
+        background: $secondary-variant;
         .container-experience {
             position: relative;
             height: 100%;
             width: 100%;
-            border: 1rem solid $secondary;
+            border: 1rem solid $secondary-variant;
+            border-top: 1rem solid $secondary;
             overflow: hidden;
             .experience-img {
                 height: 80%;
                 width: 100%;
                 border-radius: 6px 6px 0px 0px;
-                background: grey;
+                background: $secondary-variant;
                 overflow-x: auto;
                 &::-webkit-scrollbar {
                     width: 0;
@@ -32,14 +34,14 @@
                 bottom: 0;
                 height: 100px;
                 width: 100%;
-                background: $primary-variant;
+                background: $secondary;
                 border-radius: 0px 0px 6px 6px;
             }
         }
         .container-choice {
             height: 100%;
             width: 450px;
-            background: $secondary-variant;
+            background: $secondary;
             .choice-des {
                 position: relative;
                 display: flex;
@@ -114,8 +116,11 @@
                 padding:  1rem 0rem;
                 padding-left: 1rem; 
                 padding-right: 2px;
+                background: $secondary-variant;
+                border-left: 5px solid $secondary;
                 border-right: 5px solid $secondary;
                 border-bottom: 5px solid $secondary ;
+                border-radius: 0px 0px 10px 10px;
                 overflow-x: auto;
                 &::-webkit-scrollbar {
                     width: 0px;
