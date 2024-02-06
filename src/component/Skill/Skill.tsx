@@ -1,3 +1,5 @@
+import '../../style/Skill/skill.scss';
+
 function Skill() {
   return (
     <>
@@ -7,9 +9,13 @@ function Skill() {
         </div>
         <div className="content">
           <div className="skill-content">
-            <div className="container-skill">
-              <div className="skil-heading"></div>
-              <div className="skill-cont-card"></div>
+            <div className="container-skil-heading"></div>
+            <div className="container-skill-card">
+              <div className="cont-card-opac">
+                <div className="card"></div>
+                <div className="card card-bottom"></div>
+                <div className="card"></div>
+              </div>
             </div>
           </div>
         </div>

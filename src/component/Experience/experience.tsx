@@ -39,7 +39,7 @@ function Experience() {
                   <h1>My Sertificate</h1>
                   <div className="choice-buttons">
                     <h1>
-                      Next Project
+                      Next
                       <span>
                         <AiFillCaretRight />
                       </span>

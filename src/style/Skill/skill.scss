@@ -1,0 +1,46 @@
+@import '../app.scss';
+
+.skill-content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: $secondary;
+    .container-skil-heading {
+        width: 25%;
+        height: 100%;
+        background: $secondary-variant;
+        border-left: 1rem solid $secondary-variant;
+        border-top: 1rem solid $secondary;
+        border-right: 1rem double $secondary;
+        border-bottom: 1rem solid $secondary;
+    }
+    .container-skill-card {
+        display: flex;
+        align-items: center;
+        width: 75%;
+        height: 100%;
+        border-top: 1rem solid $secondary-variant;
+        border-right: 1rem double $secondary;
+        border-bottom: 1rem solid $secondary-variant;
+        background: $secondary;
+        .cont-card-opac {
+            display: flex;
+            justify-content: center;
+            gap: 6px;
+            height: 350px;
+            width: 100%;
+            border-right: 1rem double $secondary;
+            border-left: 1rem double $secondary;
+            background: $secondary-variant;
+            .card {
+                height: 90%;
+                width: 130px;
+                background: black;
+            }
+            .card.card-bottom {
+                align-self: end;
+            }
+        }
+    }
+}
