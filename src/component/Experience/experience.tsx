@@ -17,14 +17,29 @@ function Experience() {
                   <img src="./src/assets/Sertifikat/ino2.png" alt="" />
                   <img src="./src/assets/Sertifikat/ino3.png" alt="" />
                 </div>
-                <div className="experience-des"></div>
+                <div className="experience-des">
+                  <div className="des-isi">
+                    <h1>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Sint, deserunt!
+                    </h1>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Odio a mollitia dolore perferendis consectetur tempore
+                      veniam velit beatae temporibus nam suscipit sapiente cum,
+                      qui aliquam inventore nihil rem sequi sed, expedita
+                      voluptatum quaerat odit cupiditate? Tempore vitae atque
+                      natus saepe.
+                    </p>
+                  </div>
+                </div>
               </div>
               <div className="container-choice">
                 <div className="choice-des">
                   <h1>My Sertificate</h1>
                   <div className="choice-buttons">
                     <h1>
-                      Go Project
+                      Next Project
                       <span>
                         <AiFillCaretRight />
                       </span>

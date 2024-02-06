@@ -16,12 +16,14 @@
             width: 100%;
             border: 1rem solid $secondary-variant;
             border-top: 1rem solid $secondary;
+            border-bottom: 1rem solid $secondary;
             overflow: hidden;
             .experience-img {
                 height: 80%;
                 width: 100%;
-                border-radius: 6px 6px 0px 0px;
                 background: $secondary-variant;
+                border-left: 2px solid $secondary;
+                border-right: 2px solid $secondary;
                 overflow-x: auto;
                 &::-webkit-scrollbar {
                     width: 0;
@@ -34,8 +36,24 @@
                 bottom: 0;
                 height: 100px;
                 width: 100%;
-                background: $secondary;
-                border-radius: 0px 0px 6px 6px;
+                border-left: 2px solid $secondary;
+                border-right: 2px solid $secondary;
+                border-bottom: 2px solid $secondary;
+                .des-isi {
+                    padding: 4px 1rem 1rem 1rem;
+                    h1 {
+                        font-size: 16px;
+                        color: $primary;
+                        font-weight: 600;
+                        padding-bottom: 6px;
+                    }
+                    p {
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: $primary-variant;
+                        line-height: 18px;
+                    }
+                }
             }
         }
         .container-choice {
@@ -46,14 +64,17 @@
                 position: relative;
                 display: flex;
                 justify-content: center;
-                height: 25%;
+                height: 22%;
                 width: 100%;
                 overflow: hidden;
-                padding-top: 1rem;
+                padding-top: 12px;
+                border-top: 1rem solid $secondary-variant;
+                border-left: 1rem solid $secondary;
+                border-right: 1rem solid $secondary;
                 box-shadow: 0px 25px 15px -15px black;
                 background: $secondary;
                 z-index: 1;
-                font-size: 24px;
+                font-size: 20px;
                 font-weight: 700;
                 &::before {
                     content: "";
@@ -111,7 +132,7 @@
 
             .choice {
                 position: relative;
-                height: 75%;
+                height: 78%;
                 width: 100%;
                 padding:  1rem 0rem;
                 padding-left: 1rem; 

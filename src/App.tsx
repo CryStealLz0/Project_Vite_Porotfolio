@@ -4,6 +4,7 @@ import NavbarBottom from './component/Navbar/NavbarBottom.tsx';
 import HomeWelcome from './component/Home/HomeWelcome.tsx';
 import AboutProfil from './component/About/AboutProfil.tsx';
 import Experience from './component/Experience/experience.tsx';
+import Skill from './component/Skill/Skill.tsx';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         {/* Content */}
         <HomeWelcome />
         <AboutProfil />
+        <Skill />
         {/* <div className="hidden"> */}
         <Experience />
         {/* </div> */}
