@@ -1,5 +1,5 @@
 import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from 'react-icons/ai';
-import '../../style/About/aboutDes.scss';
+import '../../style/2.About/aboutDes.scss';
 
 // Data
 import { IContentAbout, IContentAboutProps } from '../../data';

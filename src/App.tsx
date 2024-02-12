@@ -1,12 +1,16 @@
 import './style/app.scss';
 import NavbarLeft from './component/Navbar/NavbarLeft.tsx';
 import NavbarBottom from './component/Navbar/NavbarBottom.tsx';
-import HomeWelcome from './component/Home/HomeWelcome.tsx';
-import AboutProfil from './component/About/AboutProfil.tsx';
-import Experience from './component/Experience/experience.tsx';
-import Skill from './component/Skill/Skill.tsx';
+// import Home from './pages/1.Home/Home.tsx';
+// import About from './pages/2.About/About.tsx';
+// import Skill from './pages/3.Skill/Skill.tsx';
+// import Experience from './pages/4.Experience/experience.tsx';
 
-function App() {
+class MainWrapperProps {
+  children: React.ReactNode;
+}
+
+function MainWrapper(props: MainWrapperProps) {
   return (
     <>
       <div className="md:ml-24" id="body-all">
@@ -14,18 +18,12 @@ function App() {
         <NavbarLeft />
         <NavbarBottom />
         {/* Navbar End */}
-
         {/* Content */}
-        <HomeWelcome />
-        <AboutProfil />
-        <Skill />
-        {/* <div className="hidden"> */}
-        <Experience />
-        {/* </div> */}
+        {props.children}
         {/* Content End */}
       </div>
     </>
   );
 }
 
-export default App;
+export default MainWrapper;

@@ -7,7 +7,8 @@ import {
   BiSolidContact,
 } from 'react-icons/bi';
 import { SetStateAction, useState } from 'react'; // Import useState
-import '../../style/Navbar/navbarLeft.scss';
+import '../../style/StyleComponent/Navbar/navbarLeft.scss';
+import { Link } from 'react-router-dom';
 
 function NavbarLeft() {
   const [activeIcon, setActiveIcon] = useState('home'); // State untuk ikon yang aktif
@@ -26,7 +27,7 @@ function NavbarLeft() {
         <div className="bg-p-v w-full h-5/6">
           <div className="h-full w-full pb-20 pt-6">
             <ul className="flex flex-col h-full justify-around">
-              <a href="#home">
+              <Link to="/">
                 <div
                   className={`h-20 ml-3 rounded-l-full flex justify-center items-center mr-[-1px] relative ${
                     activeIcon === 'home'
@@ -45,8 +46,8 @@ function NavbarLeft() {
                     <BiSolidHome className="h-8 w-8 mr-[-10px]" />
                   </li>
                 </div>
-              </a>
-              <a href="#about">
+              </Link>
+              <Link to="/about">
                 <div
                   className={`h-20 ml-3 rounded-l-full flex justify-center items-center mr-[-1px] relative  ${
                     activeIcon === 'profil'
@@ -64,7 +65,7 @@ function NavbarLeft() {
                     <BiSolidUser className="h-8 w-8 mr-[-10px]" />
                   </li>
                 </div>
-              </a>
+              </Link>
               <a href="#experience">
                 <div
                   className={`h-20 ml-3 rounded-l-full flex justify-center items-center mr-[-1px] relative  ${

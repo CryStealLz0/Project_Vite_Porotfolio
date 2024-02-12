@@ -5,7 +5,7 @@ import {
   BiSolidSpreadsheet,
   BiSolidContact,
 } from 'react-icons/bi';
-import '../../style/Navbar/navbarBottom.scss';
+import '../../style/StyleComponent/Navbar/navbarBottom.scss';
 import { useState } from 'react';
 
 function NavbarBottom() {

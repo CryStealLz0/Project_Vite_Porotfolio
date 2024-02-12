@@ -1,4 +1,4 @@
-import '../../style/Experience/experience.scss';
+import '../../style/4.Experience/experience.scss';
 import { AiFillCaretRight } from 'react-icons/ai';
 
 function Experience() {

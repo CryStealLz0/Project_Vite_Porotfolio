@@ -1,5 +1,5 @@
 @import '/src/style/app.scss';
-@import '../About/aboutProfilQuery.scss';
+@import '../2.About/aboutQuery.scss';
 @import '../StyleComponent/containerSection.scss';
 
     .content-about {
@@ -142,6 +142,7 @@
                 justify-content: center;
                 text-align: center;
                 width: 100%;
+                margin-top: 1rem;
                 padding: 2rem 1rem;
                 p {
                     font-size: 12px;
