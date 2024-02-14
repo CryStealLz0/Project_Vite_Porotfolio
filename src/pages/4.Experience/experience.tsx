@@ -1,10 +1,11 @@
+import MainWrapper from '../../App';
 import '../../style/4.Experience/experience.scss';
 import { AiFillCaretRight } from 'react-icons/ai';
 
 function Experience() {
   return (
     <>
-      <div>
+      <MainWrapper>
         <div className="container-section" id="experience">
           <div className="heading">
             <h1>Experience</h1>
@@ -48,7 +49,9 @@ function Experience() {
                 </div>
                 <div className="choice">
                   <div className="choice-isi">
-                    <div className="img-choice"></div>
+                    <div className="img-choice">
+                      <img src="./src/assets/Sertifikat/ino1.png" alt="" />
+                    </div>
                     <div className="des-choice">
                       <h1>lorem10</h1>
                       <p>
@@ -172,7 +175,7 @@ function Experience() {
             </div>
           </div>
         </div>
-      </div>
+      </MainWrapper>
     </>
   );
 }

@@ -40,5 +40,13 @@
       "buttons": "Back to About",
       "idNext": "#about-about"
     }
+  ],
+  "contentExperienceDes": [
+    {
+      "id": "1",
+      "image": "./src/assets/Sertifikat/ino1.png",
+      "heading": "My project portofolio",
+      "description": "Im create my website portofolio with pasion and creatifity to the sky"
+    }
   ]
 }
