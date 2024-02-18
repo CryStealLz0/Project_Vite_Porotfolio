@@ -1,5 +1,6 @@
 import MainWrapper from '../../App';
 import '../../style/3.Skill/skill.scss';
+import { IoLogoHtml5 } from 'react-icons/io5';
 
 function Skill() {
   return (
@@ -14,6 +15,44 @@ function Skill() {
               <div className="container-skil-heading"></div>
               <div className="container-skill-card">
                 <div className="cont-card-opac">
+                  <div className="card">
+                    <div className="card-head">
+                      <IoLogoHtml5 className="h-20 w-20 flex m-auto text-[#222]" />
+                      <div className="card-text">
+                        <p>HTML</p>
+                      </div>
+                    </div>
+                    <div className="card-des">
+                      <h1> Im learn in playlist WPU and bootcam dicoding</h1>
+                      <div className="links">
+                        <p>Link Playlist</p>
+                        <ul>
+                          <li>
+                            <a href="">Basic HTML</a>
+                          </li>
+                          <li>
+                            <a href="">HTML 5</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="links">
+                        <p>Link Bootcamp</p>
+                        <ul>
+                          <li>
+                            <a href="https://www.dicoding.com/academies/123/tutorials/4916">
+                              Semantic HTML
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <p></p>
+                  </div>
+                  <div className="card card-bottom"></div>
+                  <div className="card"></div>
+                  <div className="card card-bottom"></div>
+                  <div className="card"></div>
+                  <div className="card card-bottom"></div>
                   <div className="card"></div>
                   <div className="card card-bottom"></div>
                   <div className="card"></div>

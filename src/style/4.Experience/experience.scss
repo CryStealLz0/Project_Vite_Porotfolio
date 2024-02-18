@@ -154,14 +154,15 @@
                     border-radius: 8px;
                     background: $primary-variant;
                     transition: 0.3s;
-                    margin: 4px 0rem;
+                    margin: 6px 0rem;
                     padding: 10px;
+                    box-shadow: 3px 3px 6px black;
                     overflow: hidden;
                     &:hover {
                         transform: translateX(-1rem);
                     }
                     .img-choice {
-                        display: block;
+                        display: flex;
                         width: 100px;
                         height: 100%;
                         margin-right: 10px;
@@ -175,7 +176,6 @@
                         overflow-x: auto;
                         &::-webkit-scrollbar {
                             width: 0px;
-                            
                         }
                         h1 {
                             color: $text-color;

@@ -41,7 +41,39 @@
       "idNext": "#about-about"
     }
   ],
-  "contentExperienceDes": [
+  "contentExperienceSertificate": [
+    {
+      "id": "1",
+      "image-1": "./src/assets/Sertifikat/ino1.png",
+      "image-2": "./src/assets/Sertifikat/ino1.png",
+      "image-3": "./src/assets/Sertifikat/ino1.png",
+      "heading-1": "My project portofolio",
+      "heading": "My project portofolio",
+      "description-1": "Im create my website portofolio with pasion and creatifity to the sky",
+      "description-2": "Im create my website portofolio with pasion and creatifity to the sky"
+    }
+  ],
+  "contentExperienceCardSertificate": [
+    {
+      "id": "1",
+      "image": "./src/assets/Sertifikat/ino1.png",
+      "heading": "My project portofolio",
+      "description": "Im create my website portofolio with pasion and creatifity to the sky"
+    }
+  ],
+  "contentExperienceProject": [
+    {
+      "id": "1",
+      "image-1": "./src/assets/Sertifikat/ino1.png",
+      "image-2": "./src/assets/Sertifikat/ino1.png",
+      "image-3": "./src/assets/Sertifikat/ino1.png",
+      "heading-1": "My project portofolio",
+      "heading": "My project portofolio",
+      "description-1": "Im create my website portofolio with pasion and creatifity to the sky",
+      "description-2": "Im create my website portofolio with pasion and creatifity to the sky"
+    }
+  ],
+  "contentExperienceCardProject": [
     {
       "id": "1",
       "image": "./src/assets/Sertifikat/ino1.png",
