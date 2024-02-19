@@ -16,10 +16,11 @@ function Skill() {
               <div className="container-skill-card">
                 <div className="cont-card-opac">
                   <div className="card">
+                    <div className="card-bg bg-[#E96228]"></div>
                     <div className="card-head">
                       <IoLogoHtml5 className="h-20 w-20 flex m-auto text-[#222]" />
                       <div className="card-text">
-                        <p>HTML</p>
+                        <h1>HTML</h1>
                       </div>
                     </div>
                     <div className="card-des">
