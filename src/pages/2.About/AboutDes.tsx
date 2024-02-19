@@ -12,7 +12,7 @@ function AboutDes({ contentAboutData }: IContentAboutProps) {
           <div className="container-des-about">
             {contentAboutData.length > 0 ? (
               contentAboutData.map((ContentAbout: IContentAbout) => (
-                <div className="des-a" id={ContentAbout.id}>
+                <div className="des-a" id={ContentAbout.idLink}>
                   <div className="heading-des">
                     <h1>{ContentAbout.heading1}</h1>
                     <h1>{ContentAbout.heading2}</h1>

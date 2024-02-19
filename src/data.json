@@ -1,7 +1,7 @@
 {
   "contentAbout": [
     {
-      "id": "about-about",
+      "idLink": "about-about",
       "heading1": "Hello guys,",
       "heading2": "you can call me Dimas.",
       "description": "I am a website developer with a passion for adding value to every project. Together, let's transform ideas into extraordinary digital realities.",
@@ -9,7 +9,7 @@
       "idNext": "#about-school"
     },
     {
-      "id": "about-school",
+      "idLink": "about-school",
       "heading1": "I am currently",
       "heading2": "studying at Pamulang University.",
       "description": "I attended elementary school at Bakti Jaya, middle school at Al-Inayah Islamic boarding school, vocational high school at Sasmita Jaya 1, and I am currently in my fourth semester at Pamulang University.",
@@ -17,7 +17,7 @@
       "idNext": "#about-activity"
     },
     {
-      "id": "about-activity",
+      "idLink": "about-activity",
       "heading1": "Exploring new realms",
       "heading2": "of knowledge and striving for excellence.",
       "description": "Currently, I am exploring my creative potential in website development, applying the knowledge I have acquired, and constantly seeking fresh inspiration to meet the challenges of future evolution.",
@@ -25,7 +25,7 @@
       "idNext": "#about-hobby"
     },
     {
-      "id": "about-hobby",
+      "idLink": "about-hobby",
       "heading1": "Striving to deliver",
       "heading2": "excellence in every endeavor I undertake.",
       "description": "As of now, web development has become my avid interest. Hence, I am eagerly taking this chance to cultivate intriguing websites, turning my passion into a fulfilling hobby.",
@@ -33,12 +33,50 @@
       "idNext": "#about-personal"
     },
     {
-      "id": "about-personal",
+      "idLink": "about-personal",
       "heading1": "I reside in South Tangerang,",
       "heading2": "precisely in the Pamulang Permata.",
       "description": "I reside in the city of South Tangerang, precisely in Bakti Jaya district, on Permata Pamulang Street. I was born on October 5, 2002. Currently, I am not employed, but I work as a martial arts coach near my home.",
       "buttons": "Back to About",
       "idNext": "#about-about"
+    }
+  ],
+  "contentSkills": [
+    {
+      "id": "1",
+      "clasPosition": "card",
+      "componentIcon": "<IoLogoHtml5 className=`h-20 w-20 flex m-auto text-[#222]` />",
+      "headIcon": "HTML",
+      "desSkills": "I'm learning in playlist WPU and bootcamp dicoding",
+      "linkSkills": [
+        {
+          "linkPlaylist": {
+            "headList": "Link Playlist",
+            "links": [
+              {
+                "id": "1",
+                "listLink": "https://www.youtube.com/watch?v=NBZ9Ro6UKV8&list=PLFIM0718LjIVuONHysfOK0ZtiqUWvrx4F&pp=iAQB",
+                "list": "Basic HTML"
+              },
+              {
+                "id": "2",
+                "listLink": "https://www.youtube.com/watch?v=Q2VqCG13ejA&list=PLFIM0718LjIX-K5eeHRImnZhPUMhsw9A7",
+                "list": "HTML 5"
+              }
+            ]
+          },
+          "linkBootcamp": {
+            "headList": "Link Bootcamp",
+            "links": [
+              {
+                "id": "1",
+                "listLink": "https://www.dicoding.com/academies/123/tutorials/4916",
+                "list": "Semantic HTML"
+              }
+            ]
+          }
+        }
+      ]
     }
   ],
   "contentExperienceSertificate": [

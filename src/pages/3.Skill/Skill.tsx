@@ -49,14 +49,6 @@ function Skill() {
                     </div>
                     <p></p>
                   </div>
-                  <div className="card card-bottom"></div>
-                  <div className="card"></div>
-                  <div className="card card-bottom"></div>
-                  <div className="card"></div>
-                  <div className="card card-bottom"></div>
-                  <div className="card"></div>
-                  <div className="card card-bottom"></div>
-                  <div className="card"></div>
                 </div>
               </div>
             </div>
