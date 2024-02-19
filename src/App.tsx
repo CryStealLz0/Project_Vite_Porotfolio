@@ -1,6 +1,7 @@
 import './style/app.scss';
 import NavbarLeft from './component/Navbar/NavbarLeft.tsx';
 import NavbarBottom from './component/Navbar/NavbarBottom.tsx';
+import data from './data.json';
 // import Home from './pages/1.Home/Home.tsx';
 // import About from './pages/2.About/About.tsx';
 // import Skill from './pages/3.Skill/Skill.tsx';

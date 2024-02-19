@@ -27,19 +27,19 @@ export interface IContentSkills {
   linkSkills: {
     linkPlaylist: {
       headList: string;
-      links: {
+      links: Array<{
         id: string;
         listLink: string;
         list: string;
-      };
+      }>;
     };
     linkBootcamp: {
       headList: string;
-      links: {
+      links: Array<{
         id: string;
         listLink: string;
         list: string;
-      };
+      }>;
     };
   };
 }
