@@ -18,7 +18,7 @@ const routes = [
   },
   {
     path: '/skill',
-    element: <Skill contentSkillsData={data.contentSkills} />,
+    element: <Skill contentSkillsData={data?.contentSkills} />,
   },
   {
     path: '/experience',

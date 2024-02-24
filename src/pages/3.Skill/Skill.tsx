@@ -25,7 +25,10 @@ function Skill({ contentSkillsData }: IContentSkillsProps) {
                             key={ContentSkills?.key || index}
                           >
                             <div
-                              className={`card-bg   ${ContentSkills.clasColor}`}
+                              className={`card-bg`}
+                              style={{
+                                backgroundColor: ContentSkills?.clasColor,
+                              }}
                             ></div>
                             <div className="card-head">
                               <div className="styleIcon">
@@ -33,7 +36,7 @@ function Skill({ contentSkillsData }: IContentSkillsProps) {
                                   src={ContentSkills?.svgIcon || '#'}
                                   alt=""
                                   className={
-                                    ContentSkills.stlyeIcon || 'pt-2 pb-2'
+                                    ContentSkills.styleIcon || 'pt-2 pb-2'
                                   }
                                 />
                               </div>

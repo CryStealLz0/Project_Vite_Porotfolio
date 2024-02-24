@@ -18,12 +18,13 @@ export interface IContentAboutProps {
 }
 // Data About End
 
+// Data Skill
 export interface IContentSkills {
   key: number;
   clasPosition: string;
   clasColor: string;
   svgIcon: string;
-  stlyeIcon: string;
+  styleIcon: string;
   headIcon: string;
   desSkills: string;
   linkSkills: {
@@ -49,3 +50,4 @@ export interface IContentSkills {
 export interface IContentSkillsProps {
   contentSkillsData: IContentSkills[];
 }
+// Data Skill End

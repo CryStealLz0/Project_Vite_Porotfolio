@@ -45,7 +45,7 @@
     {
       "key": 1,
       "clasPosition": "card",
-      "clasColor": "bg-[#E96228]",
+      "clasColor": "#E96228",
       "svgIcon": "./src/assets/svg/html.svg",
       "styleIcon": "pt-1 pb-1",
       "headIcon": "HTML",
@@ -86,7 +86,7 @@
     {
       "key": 2,
       "clasPosition": "card card-bottom",
-      "clasColor": "bg-[#2862E9]",
+      "clasColor": "#2862E9",
       "svgIcon": "./src/assets/svg/css.svg",
       "styleIcon": "pt-1 pb-1",
       "headIcon": "HTML",
@@ -127,7 +127,7 @@
     {
       "key": 3,
       "clasPosition": "card",
-      "clasColor": "bg-[#FFD940]",
+      "clasColor": "#FFD940g",
       "svgIcon": "./src/assets/svg/javascript.svg",
       "styleIcon": "pt-2 pb-2",
       "headIcon": "HTML",
