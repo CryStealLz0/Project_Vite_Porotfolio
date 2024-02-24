@@ -45,8 +45,9 @@
     {
       "key": 1,
       "clasPosition": "card",
-      "svgIcon": " ./src/assets/svg/html.svg",
-      "styleIcon": "iconStyle",
+      "clasColor": "bg-[#E96228]",
+      "svgIcon": "./src/assets/svg/html.svg",
+      "styleIcon": "pt-1 pb-1",
       "headIcon": "HTML",
       "desSkills": "I'm learning in playlist WPU and bootcamp dicoding",
       "linkSkills": {
@@ -85,8 +86,50 @@
     {
       "key": 2,
       "clasPosition": "card card-bottom",
-      "svgIcon": " ./src/assets/img",
-      "styleIcon": "h-20 w-20 flex m-auto text-[#222]",
+      "clasColor": "bg-[#2862E9]",
+      "svgIcon": "./src/assets/svg/css.svg",
+      "styleIcon": "pt-1 pb-1",
+      "headIcon": "HTML",
+      "desSkills": "I'm learning in playlist WPU and bootcamp dicoding",
+      "linkSkills": {
+        "linkPlaylist": {
+          "headList": "Link Playlist",
+          "links": [
+            {
+              "id": 1,
+              "listLink": "https://www.youtube.com/watch?v=NBZ9Ro6UKV8&list=PLFIM0718LjIVuONHysfOK0ZtiqUWvrx4F&pp=iAQB",
+              "list": "Basic HTML"
+            },
+            {
+              "id": 2,
+              "listLink": "https://www.youtube.com/watch?v=Q2VqCG13ejA&list=PLFIM0718LjIX-K5eeHRImnZhPUMhsw9A7",
+              "list": "HTML 5"
+            }
+          ]
+        },
+        "linkBootcamp": {
+          "headList": "Link Bootcamp",
+          "links": [
+            {
+              "id": 1,
+              "listLink": "https://www.dicoding.com/academies/123/tutorials/4916",
+              "list": "Semantic HTML"
+            },
+            {
+              "id": 2,
+              "listLink": "https://www.dicoding.com/academies/123/tutorials/4916",
+              "list": "HTML"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": 3,
+      "clasPosition": "card",
+      "clasColor": "bg-[#FFD940]",
+      "svgIcon": "./src/assets/svg/javascript.svg",
+      "styleIcon": "pt-2 pb-2",
       "headIcon": "HTML",
       "desSkills": "I'm learning in playlist WPU and bootcamp dicoding",
       "linkSkills": {

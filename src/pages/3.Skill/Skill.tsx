@@ -24,13 +24,17 @@ function Skill({ contentSkillsData }: IContentSkillsProps) {
                             className={ContentSkills?.clasPosition || ''}
                             key={ContentSkills?.key || index}
                           >
-                            <div className="card-bg bg-[#E96228]"></div>
+                            <div
+                              className={`card-bg   ${ContentSkills.clasColor}`}
+                            ></div>
                             <div className="card-head">
                               <div className="styleIcon">
                                 <img
                                   src={ContentSkills?.svgIcon || '#'}
                                   alt=""
-                                  className={ContentSkills?.stlyeIcon || ''}
+                                  className={
+                                    ContentSkills.stlyeIcon || 'pt-2 pb-2'
+                                  }
                                 />
                               </div>
                               <div className="card-text">

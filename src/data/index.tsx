@@ -21,6 +21,7 @@ export interface IContentAboutProps {
 export interface IContentSkills {
   key: number;
   clasPosition: string;
+  clasColor: string;
   svgIcon: string;
   stlyeIcon: string;
   headIcon: string;

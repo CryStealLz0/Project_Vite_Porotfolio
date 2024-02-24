@@ -92,6 +92,7 @@
                         img {
                             height: 80px;
                             width: 80px;
+                            filter: drop-shadow(2px 2px 0px black);
                         }
                     }
                     .card-text {
@@ -174,7 +175,7 @@
                                 a {
                                     position: relative;
                                     color: $secondary-variant-light;
-                                    text-shadow: 1px 1px 3px black;
+                                    text-shadow: 0px 0px 4px black, 2px 2px 4px black;
                                     padding: 2px 0px;
                                     &:hover::after {
                                         width: 50%;
