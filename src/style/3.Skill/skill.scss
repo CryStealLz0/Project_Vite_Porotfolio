@@ -86,6 +86,14 @@
                     transition: 0.3s;
                     margin-bottom: 6px;
                     background: none;
+                    .styleIcon {
+                        display: flex;
+                        justify-content: center;
+                        img {
+                            height: 80px;
+                            width: 80px;
+                        }
+                    }
                     .card-text {
                         display: flex; 
                         justify-content: center;
@@ -125,13 +133,13 @@
                     .links {
                         padding: 0rem 1rem;
                         p {
-                            // opacity: 0;
+                            opacity: 0;
                             font-weight: 500;
                             transform: translateX(-1rem);
                             transition: 0.3s;
                         }
                         ul {
-                            // opacity: 0;
+                            opacity: 0;
                             transform: translateX(-1rem);
                             transition: 0.3s;
                             li {
@@ -145,18 +153,44 @@
                 &:hover .card-des {
                     h1 {
                         filter: blur(0px);
+                        font-size: 12px;
                         transition-delay: 1.3s;
                     }
                     .links {
                         p {
                             opacity: 1;
+                            font-size: 12px;
+                            font-weight: 600;
                             transform: translateX(0rem);
                             transition-delay: 2s;
                         }
                         ul {
                             opacity: 1;
+                            font-size: 12px;
                             transform: translateX(0rem);
                             transition-delay: 2.3s;
+                            li {
+                                padding: 2px 0px;
+                                a {
+                                    position: relative;
+                                    color: $secondary-variant-light;
+                                    text-shadow: 1px 1px 3px black;
+                                    padding: 2px 0px;
+                                    &:hover::after {
+                                        width: 50%;
+                                    }
+                                &::after {
+                                    content: ' ';
+                                    position: absolute;
+                                    left: 0;
+                                    bottom: 0;
+                                    height: 1px;
+                                    width: 0%;
+                                    background: $secondary-variant-light;
+                                    transition: 0.3s;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
