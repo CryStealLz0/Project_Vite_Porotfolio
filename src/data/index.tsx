@@ -19,7 +19,7 @@ export interface IContentAboutProps {
 // Data About End
 
 export interface IContentSkills {
-  id: string;
+  key: number;
   clasPosition: string;
   componentIcon: string;
   headIcon: string;
@@ -28,7 +28,7 @@ export interface IContentSkills {
     linkPlaylist: {
       headList: string;
       links: Array<{
-        id: string;
+        id: number;
         listLink: string;
         list: string;
       }>;
@@ -36,7 +36,7 @@ export interface IContentSkills {
     linkBootcamp: {
       headList: string;
       links: Array<{
-        id: string;
+        id: number;
         listLink: string;
         list: string;
       }>;

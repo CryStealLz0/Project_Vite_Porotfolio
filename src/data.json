@@ -43,7 +43,7 @@
   ],
   "contentSkills": [
     {
-      "id": "1",
+      "key": 1,
       "clasPosition": "card",
       "componentIcon": "<IoLogoHtml5 className=`h-20 w-20 flex m-auto text-[#222]` />",
       "headIcon": "HTML",
@@ -54,12 +54,12 @@
             "headList": "Link Playlist",
             "links": [
               {
-                "id": "1",
+                "id": 1,
                 "listLink": "https://www.youtube.com/watch?v=NBZ9Ro6UKV8&list=PLFIM0718LjIVuONHysfOK0ZtiqUWvrx4F&pp=iAQB",
                 "list": "Basic HTML"
               },
               {
-                "id": "2",
+                "id": 2,
                 "listLink": "https://www.youtube.com/watch?v=Q2VqCG13ejA&list=PLFIM0718LjIX-K5eeHRImnZhPUMhsw9A7",
                 "list": "HTML 5"
               }
@@ -69,7 +69,48 @@
             "headList": "Link Bootcamp",
             "links": [
               {
-                "id": "1",
+                "id": 1,
+                "listLink": "https://www.dicoding.com/academies/123/tutorials/4916",
+                "list": "Semantic HTML"
+              },
+              {
+                "id": 2,
+                "listLink": "https://www.dicoding.com/academies/123/tutorials/4916",
+                "list": "HTML"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": 2,
+      "clasPosition": "card card-bottom",
+      "componentIcon": "<IoLogoHtml5 className=`h-20 w-20 flex m-auto text-[#222]` />",
+      "headIcon": "HTML",
+      "desSkills": "I'm learning in playlist WPU and bootcamp dicoding",
+      "linkSkills": [
+        {
+          "linkPlaylist": {
+            "headList": "Link Playlist",
+            "links": [
+              {
+                "id": 1,
+                "listLink": "https://www.youtube.com/watch?v=NBZ9Ro6UKV8&list=PLFIM0718LjIVuONHysfOK0ZtiqUWvrx4F&pp=iAQB",
+                "list": "Basic HTML"
+              },
+              {
+                "id": 2,
+                "listLink": "https://www.youtube.com/watch?v=Q2VqCG13ejA&list=PLFIM0718LjIX-K5eeHRImnZhPUMhsw9A7",
+                "list": "HTML 5"
+              }
+            ]
+          },
+          "linkBootcamp": {
+            "headList": "Link Bootcamp",
+            "links": [
+              {
+                "id": 1,
                 "listLink": "https://www.dicoding.com/academies/123/tutorials/4916",
                 "list": "Semantic HTML"
               }
